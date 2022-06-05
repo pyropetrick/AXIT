@@ -9,8 +9,8 @@
         <header class="header">
             <div class="content-box">
                 <div class="header__logo">
-                    <img src="./img/logo/AX.png" alt="AX" class="header__logo--AX">
-                    <img src="./img/logo/IT.png" alt="IT" class= "header__logo--IT">
+                    <a href=""><img src="./img/logo/AX.png" alt="AX" class="header__logo--AX">
+                    <img src="./img/logo/IT.png" alt="IT" class= "header__logo--IT"></a>
                 </div>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
@@ -41,15 +41,21 @@
                 <div class="banner__box-form">
                     <h4 class="banner__title-form">Try Your <strong>free</strong> Trial Today</h4>
                     <form action="#" class="banner__form">
-                        <label for="Username" class="banner__label">Name <br>
-                            <input type="text" name="Username" class="banner__input">
-                        </label>
-                        <label for="Email" class="banner__label">Email <br>
-                            <input type="email" name="Email" class="banner__input">
-                        </label>
-                        <label for="password" class="banner__label">Password <br>
-                            <input type="password" name="password" class="banner__input">
-                        </label>
+                        <div>
+                            <label for="Username" class="banner__label">Name <br>
+                                <input type="text" name="Username" class="banner__input">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="Email" class="banner__label">Email <br> 
+                                <input type="email" name="Email" class="banner__input">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="password" class="banner__label">Password <br> 
+                                <input type="password" name="password" class="banner__input">
+                            </label>
+                        </div>
                     </form>
                     <button type="button" class="banner__button-sign">Get Started</button>
                 </div>
@@ -85,12 +91,12 @@
                         <li class="tabs__list-item">TAB 3</li>
                         <li class="tabs__list-item"></li>
                     </ul> -->
-                <input type="radio" class="tabs__input-btn tabs__input-btn--first" , name="tabs-btn" value="" checked="checked">
-                <label for="tabs__input-btn--1" class="tabs__btn-name">tab 1</label>
-                <input type="radio" class="tabs__input-btn tabs__input-btn--second" ,="" name="tabs-btn" value="">
-                <label for="tabs__input-btn--2" class="tabs__btn-name">tab 2</label>
-                <input type="radio" class="tabs__input-btn tabs__input-btn--third" ,="" name="tabs-btn" value="">
-                <label for="tabs__input-btn--3" class="tabs__btn-name">tab 3</label>
+                <input type="radio" class="tabs__input-btn" id="tabFirst" name="tabs-btn" value="" checked>
+                <label for="tabFirst" class="tabs__btn-name">tab 1</label>
+                <input type="radio" class="tabs__input-btn" id="tabSecond" ,="" name="tabs-btn" value="">
+                <label for="tabSecond" class="tabs__btn-name">tab 2</label>
+                <input type="radio" class="tabs__input-btn" id="tabThird" ,="" name="tabs-btn" value="">
+                <label for="tabThird" class="tabs__btn-name">tab 3</label>
                 <div class="tabs__box-wrap tabs__box-wrap--first">
                     <div class="tabs__inner-box">
                         <h3 class="tabs__main-title">Tabs with soft transitioning effect.</h3>
@@ -119,7 +125,7 @@
                             penatibus et magnis dis parturient montes. <br> <br>
                             
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>
-                            bibendum laoreet.
+                            bibendum laoreet.2
                         </p>
                         <button type="button" class="tabs__button">Download</button>
                         
@@ -137,7 +143,7 @@
                             penatibus et magnis dis parturient montes. <br> <br>
                             
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>
-                            bibendum laoreet.
+                            bibendum laoreet.3
                         </p>
                         <button type="button" class="tabs__button">Download</button>
                         
@@ -157,7 +163,7 @@
                 </div>
                 <p class="about-us__subtitle">Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit.
-                </p>
+                </p> 
                 <ul class="about-us__skill-list">
                     <li class="about-us__skill-item">
                         <div class="about-us__skill-wrapper">
@@ -183,7 +189,7 @@
                     </li>
                     <li class="about-us__skill-item"> 
                         <div class="about-us__skill-wrapper">
-                            <img src="./img/about/Vector3.svg" alt="image-wrapper">
+                            <img src="./img/about/Vector3.svg" alt="image-wrapper" >
                         </div>
                         <h4 class="about-us__skill-title">Thoughtful Design</h4>
                         <p class="about-us__skill-text">Lorem ipsum dolor sit amet, 
@@ -311,8 +317,9 @@
                 <p class="banner-second__subtitle">Use the sections you need, remove the ones you don't.  
                     Create gorgeous prototypes faster than ever!
                 </p>
-                <button type="button" class="banner-second__button">Download</button>
-                
+                <div class="box-button">
+                    <button type="button" class="banner-second__button">Download</button>
+                </div>
             </div>
         </section>
         <section class ="contact">
