@@ -223,15 +223,11 @@ body {
 }
 .social-media .content-box {
     display:flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .social-media__box-title {
-    display: grid;
-    align-content: space-between;
     width: 470px;
-    height: 100px;
     
 }
 
@@ -240,13 +236,15 @@ body {
     font-weight: 700;
     font-size: 1.5rem;
     color: #333333;
-    margin: 0px;
+    margin-bottom: 0px;
+    margin-top: 15px;
 }
 .social-media__subtitle {
     font-weight: 400;
     font-size: 1.125rem;
     color: #86878B;
-    margin:0px;
+    margin-top: 25px;
+    margin-bottom: 0px;
 }
 
 .social-media__list {
