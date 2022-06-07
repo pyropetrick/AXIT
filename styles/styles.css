@@ -8,7 +8,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 1.125rem;
-    margin: 0px auto;
+    
 }
 .content-box {
     padding: 0 15px;
@@ -26,7 +26,7 @@ body {
     align-items: center;
 }
 
-.header__nav-list {
+.nav-list {
     list-style-type:none;
     display:flex;
     justify-content: center;
@@ -34,42 +34,39 @@ body {
     margin: 0px;
     padding: 0px;    
 }
-.header__list__item {
+.nav-list__item {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 0.875rem;
-    width: 115px;
-    height: 75px;
+    
 }
-.header__list-link {
-    width: 115px;
-    height: 75px;
+.nav-list__link {
     display:flex;
     justify-content: center;
     align-items:center;
     text-decoration: none;
     transition: background-color .3s  ease-in-out;
+    padding: 30px;
+    text-transform: uppercase;
 }
 
 /* еще не посещенная ссылка */
-.header__list-link:link {
+.nav-list__link:link {
     color:#fff;
 }
 /* посещенная ссылка */
-.header__list-link:visited {
+.nav-list__link:visited {
     color: #fff;
 }
 /* при наведении */
-.header__list-link:hover {
+.nav-list__link:hover {
     background-color: #EC7979;
-    text-transform: uppercase;
     font-weight: 700; 
     font-size: 0.81rem;   
 }
 /* при нажатии */
-.header__list-link:active {
+.nav-list__link:active {
     background-color: #AB4949;
-    text-transform: uppercase;
     font-weight: 700; 
     font-size: 0.81rem;   
 }
@@ -77,13 +74,13 @@ body {
 /* секция banner */
 
 .banner {
-    background: url("./img/background/backImg.jpg") center;
+    background: url("../img/background/backImg.jpg") center;
     background-size: cover;
     box-shadow:0 0 0 1510px rgba(0, 0, 0, 0.5) inset;
+    height: 100vh;
 }
 .banner .content-box {
-    height: 1025px;
-    width: 1200px;
+    
     display:flex;
     align-items: center;
     gap: 30px;
@@ -218,8 +215,7 @@ body {
 /* секция social media */
 .social-media {
     background-color: #F8EFEF;
-    height: 140px;
-    margin-bottom: 100px;
+    padding: 15px 0;
 }
 .social-media .content-box {
     display:flex;
@@ -271,33 +267,9 @@ body {
 /* секция tabs */
 
 .tabs {
-    margin-bottom: 50px;
+    padding: 100px 0 50px;
 }
-/* .tabs__list {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-}
-.tabs__list-item {
-    text-align: center;
-    width: 200px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 0.875rem;
-    padding: 10px 0px;
-}
-.tabs__list-item:first-child {
-    border: 1px solid #C6CBCD;
-    border-bottom: 0px;
-}
-.tabs__list-item:nth-child(1n+2) {
-    /* border: 1px solid #C6CBCD; */
-    /* border-bottom: 1px solid #C6CBCD;
-} */
-/* .tabs__list-item:last-child {
-    width: 565px; 
-} */
+
 .tabs__input-btn {
     display:none;
 }
@@ -386,8 +358,7 @@ body {
 /* секция about */
 
 .about-us {
-    /* width: 1170px; */
-    margin-bottom: 58px;
+    padding-bottom: 50px;
 }
 .about-us__main-title {
     font-size: 2.25rem;
@@ -402,7 +373,6 @@ body {
 .separator {
     width: 170px;
     margin: 0 auto;
-    height: 0px;
 }
 
 .separator hr {
@@ -458,13 +428,10 @@ body {
 /* секция pricing */
 
 .price {
-    margin-bottom: 50px;
+    padding: 50px 0;
     background-color: #F5F5F5;
 }
 
-/* .pricing__content-box {
-    width: 1170px;
-} */
 
 .price__main-title {
     font-size: 2.25rem;
@@ -552,7 +519,7 @@ body {
 .reviews {
     display:grid;
     justify-content: center;
-    margin-bottom:64px;
+    padding-bottom: 65px;
     
 }
 .reviews__main-title {
@@ -632,8 +599,8 @@ body {
 }
 /* секция banner-second */
 .banner-second {
-    margin-bottom: 50px;
-    background:url(./img/background/bannerSec.jpg);
+    padding-bottom: 50px;
+    background:url(../img/background/bannerSec.jpg);
     box-shadow:0 0 0 1510px rgba(0, 0, 0, 0.5) inset;
     height: 442px;
 }
