@@ -9,17 +9,17 @@
     <body>
         <header class="header">
             <div class="content-box">
-                <div class="header__logo">
-                    <a href=""><img src="./img/logo/AX.png" alt="AX" class="header__logo--AX">
-                    <img src="./img/logo/IT.png" alt="IT" class= "header__logo--IT"></a>
+                <div class="header__logo--wrapper">
+                    <a href="#" class="header__logo-link"><img src="./img/logo/AX.png" alt="AX" class="header__logo header__logo--AX">
+                    <img src="./img/logo/IT.png" alt="IT" class= "header__logo header__logo--IT"></a>
                 </div>
                 <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-list__item"><a href="#" class="nav-list_link">Features</a></li>
-                        <li class="nav-list__item"><a href="#" class="nav-list_link">About</a></li>
-                        <li class="nav-list__item"><a href="#" class="nav-list_link">Pricing</a></li>
-                        <li class="nav-list__item"><a href="#" class="nav-list_link">Reviews</a></li>
-                        <li class="nav-list__item"><a href="#" class="nav-list_link">Contact</a></li>
+                    <ul class="nav__list">
+                        <li class="nav__list-item"><a href="#" class="nav__list-link">Features</a></li>
+                        <li class="nav__list-item"><a href="#" class="nav__list-link">About</a></li>
+                        <li class="nav__list-item"><a href="#" class="nav__list-link">Pricing</a></li>
+                        <li class="nav__list-item"><a href="#" class="nav__list-link">Reviews</a></li>
+                        <li class="nav__list-item"><a href="#" class="nav__list-link">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -27,38 +27,39 @@
         <section class="banner">
             <div class="content-box">
                 <div class="banner__box-title">
-                    <div class="banner__logo">
-                        <img src="./img/logo/AX(box).png" alt="AX" class="banner__logo--AX">
-                        <img src="./img/logo/IT(box).png" alt="IT" class="banner__logo--IT">
+                    <div class="banner__logo--wrapper">
+                        <img src="./img/logo/AX(box).png" alt="AX" class="banner__logo banner__logo--AX">
+                        <img src="./img/logo/IT(box).png" alt="IT" class="banner__logo banner__logo--IT">
                     </div>
                     <h1 class="banner__main-title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
-                    <div class="banner__separator">
-                        <hr>
+                    <div class="separator separator--banner">
                     </div>
                     <h5 class="banner__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                     <button type="button" class="banner__button-download">Download</button>
                     
                 </div>
                 <div class="banner__box-form">
-                    <h4 class="banner__title-form">Try Your <strong>free</strong> Trial Today</h4>
+                    <h4 class="banner__title-form">Try Your <span>free</span> Trial Today</h4>
                     <form action="#" class="banner__form">
-                        <div>
-                            <label for="Username" class="banner__label">Name <br>
+                        <div class="form-box--wrapper">
+                            <div class="form-box--inner">
+                                <label for="Username" class="banner__label">Name </label>
                                 <input type="text" name="Username" class="banner__input">
-                            </label>
-                        </div>
-                        <div>
-                            <label for="Email" class="banner__label">Email <br> 
+                                
+                            </div>
+                            <div class="form-box--inner">
+                                <label for="Email" class="banner__label">Email </label> 
                                 <input type="email" name="Email" class="banner__input">
-                            </label>
-                        </div>
-                        <div>
-                            <label for="password" class="banner__label">Password <br> 
+                                
+                            </div>
+                            <div class="form-box--inner">
+                                <label for="password" class="banner__label">Password </label>
                                 <input type="password" name="password" class="banner__input">
-                            </label>
+                            </div>
                         </div>
+                        <button type="button" class="banner__button-sign">Get Started</button>
                     </form>
-                    <button type="button" class="banner__button-sign">Get Started</button>
+                    
                 </div>
             </div>
         </section>
@@ -84,74 +85,71 @@
         </section>
         <section class="tabs">
             <div class="content-box">
-                    <!-- <ul class="tabs__list">
-                        <li class="tabs__list-item">
-
-                        </li>
-                        <li class="tabs__list-item">TAB 2</li>
-                        <li class="tabs__list-item">TAB 3</li>
-                        <li class="tabs__list-item"></li>
-                    </ul> -->
-                <input type="radio" class="tabs__input-btn" id="tabFirst" name="tabs-btn" value="" checked>
-                <label for="tabFirst" class="tabs__btn-name">tab 1</label>
-                <input type="radio" class="tabs__input-btn" id="tabSecond" ,="" name="tabs-btn" value="">
-                <label for="tabSecond" class="tabs__btn-name">tab 2</label>
-                <input type="radio" class="tabs__input-btn" id="tabThird" ,="" name="tabs-btn" value="">
-                <label for="tabThird" class="tabs__btn-name">tab 3</label>
-                <div class="tabs__box-wrap tabs__box-wrap--first">
-                    <div class="tabs__inner-box">
-                        <h3 class="tabs__main-title">Tabs with soft transitioning effect.</h3>
-                        <p class="tabs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
-                            euismod <br>
-                            bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra <br>
-                            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-                            penatibus et magnis dis parturient montes. <br> <br>
+                    <div class="tabs__nav">
+                        <button class="tabs__nav-btn" type="button" data-tab ="#tabFirst">tab 1</button>
+                        <button class="tabs__nav-btn" type="button" data-tab ="#tabSecond">tab 2 </button>
+                        <button class="tabs__nav-btn" type="button" data-tab ="#tabThird">tab 3</button>
+                    </div>
+                <div class="tabs__content">
+                    <div id="tabFirst" class="tabs__box-wrap tabs__box-wrap--active">
+                        <div  class="tabs__inner-box">
+                            <h3 class="tabs__main-title">Tabs with soft transitioning effect.</h3>
+                            <p class="tabs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+                                euismod 
+                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                                penatibus et magnis dis parturient montes.</p>
+                                
+                                <p class="tabs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                    bibendum laoreet. 
+                                </p>
                             
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>
-                            bibendum laoreet.
-                        </p>
-                        <button type="button" class="tabs__button">Download</button>
+                            <button type="button" class="tabs__button">Download</button>
+                            
+                        </div>
+                        <img src="./img/tabs/tab1.jpg" alt="tab1" class="tabs__image">
                         
                     </div>
-                    <img src="./img/tabs/tab1.jpg" alt="tab1" class="tabs__image">
-                    
-                </div>
-                <div class="tabs__box-wrap tabs__box-wrap--second">
-                    <div class="tabs__inner-box">
-                        <h3 class="tabs__main-title">Tabs with soft transitioning effect.</h3>
-                        <p class="tabs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
-                            euismod <br>
-                            bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra <br>
-                            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-                            penatibus et magnis dis parturient montes. <br> <br>
+                    <div id="tabSecond" class="tabs__box-wrap">
+                        <div class="tabs__inner-box">
+                            <h3 class="tabs__main-title">Tabs with soft transitioning effect.</h3>
+                            <p class="tabs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+                                euismod 
+                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                                penatibus et magnis dis parturient montes. 
+                            </p>
+                            <p class="tabs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                    bibendum laoreet2. 
+                            </p>
                             
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>
-                            bibendum laoreet.2
-                        </p>
-                        <button type="button" class="tabs__button">Download</button>
+                            <button type="button" class="tabs__button">Download</button>
+                            
+                        </div>
+                        <img src="./img/tabs/tab1.jpg" alt="tab1" class="tabs__image">
                         
                     </div>
-                    <img src="./img/tabs/tab1.jpg" alt="tab1" class="tabs__image">
-                    
-                </div>
-                <div class="tabs__box-wrap tabs__box-wrap--third">
-                    <div class="tabs__inner-box">
-                        <h3 class="tabs__main-title">Tabs with soft transitioning effect.</h3>
-                        <p class="tabs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
-                            euismod <br>
-                            bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra <br>
-                            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-                            penatibus et magnis dis parturient montes. <br> <br>
+                    <div id="tabThird" class="tabs__box-wrap">
+                        <div class="tabs__inner-box">
+                            <h3 class="tabs__main-title">Tabs with soft transitioning effect.</h3>
+                            <p class="tabs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+                                euismod 
+                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                                penatibus et magnis dis parturient montes. 
+                            </p>
+                            <p class="tabs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                bibendum laoreet3. 
+                            </p>
                             
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>
-                            bibendum laoreet.3
-                        </p>
-                        <button type="button" class="tabs__button">Download</button>
+                            <button type="button" class="tabs__button">Download</button>
+                            
+                        </div>
+                        <img src="./img/tabs/tab1.jpg" alt="tab1" class="tabs__image">
                         
                     </div>
-                    <img src="./img/tabs/tab1.jpg" alt="tab1" class="tabs__image">
-                    
                 </div>
+                
             </div>
         </section>
         <section class="about-us">
@@ -160,7 +158,6 @@
                     WHY THIS IS AWESOME
                 </h2>
                 <div class="separator">
-                    <hr>
                 </div>
                 <p class="about-us__subtitle">Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit.
@@ -205,46 +202,45 @@
         <section class="price">
             <div class="content-box">
                 <h2 class="price__main-title">pricing options</h2>
-                <div class="separator">
-                    <hr>
+                <div class="separator separator--about">
                 </div>
                 <p class="price__subtitle">Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit.
                 </p>
                 <div class="price__container">
-                    <ul class="price__list">
-                        <li class="price__list-item">Basic</li>
-                        <li class="price__list-item">$10</li>
-                        <li class="price__list-item">Free for life</li>
-                        <li class="price__list-item">1 gb of space</li>
-                        <li class="price__list-item">1 gb of space</li>
-                        <li class="price__list-item">1 gb of space</li>
-                        <li class="price__list-item">1 gb of space</li>
-                        <li class="price__list-item">1 gb of space</li>
-                        <li class="price__list-item">1 gb of space</li>
-                    </ul>
-                    <ul class="price__list">
-                        <li class="price__list-item">Optima</li>
-                        <li class="price__list-item">$20</li>
-                        <li class="price__list-item">Free for life</li>
-                        <li class="price__list-item">1 gb of space</li>
-                        <li class="price__list-item">1 gb of space</li>
-                        <li class="price__list-item">1 gb of space</li>
-                        <li class="price__list-item">1 gb of space</li>
-                        <li class="price__list-item">1 gb of space</li>
-                        <li class="price__list-item">1 gb of space</li>
-                    </ul>
-                    <ul class="price__list">
-                        <li class="price__list-item">Pro</li>
-                        <li class="price__list-item">$30</li>
-                        <li class="price__list-item">Free for life</li>
-                        <li class="price__list-item">1 gb of space</li>
-                        <li class="price__list-item">1 gb of space</li>
-                        <li class="price__list-item">1 gb of space</li>
-                        <li class="price__list-item">1 gb of space</li>
-                        <li class="price__list-item">1 gb of space</li>
-                        <li class="price__list-item">1 gb of space</li>
-                    </ul>
+                    <div class="price__list">
+                        <p class="price__list-item">Basic</p>
+                        <p class="price__list-item">$10</p>
+                        <p class="price__list-item">Free for life</p>
+                        <p class="price__list-item">1 gb of space</p>
+                        <p class="price__list-item">1 gb of space</p>
+                        <p class="price__list-item">1 gb of space</p>
+                        <p class="price__list-item">1 gb of space</p>
+                        <p class="price__list-item">1 gb of space</p>
+                        <p class="price__list-item">1 gb of space</p>
+                    </div>
+                    <div class="price__list">
+                        <p class="price__list-item">Optima</p>
+                        <p class="price__list-item">$20</p>
+                        <p class="price__list-item">Free for life</p>
+                        <p class="price__list-item">1 gb of space</p>
+                        <p class="price__list-item">1 gb of space</p>
+                        <p class="price__list-item">1 gb of space</p>
+                        <p class="price__list-item">1 gb of space</p>
+                        <p class="price__list-item">1 gb of space</p>
+                        <p class="price__list-item">1 gb of space</p>
+                    </div>
+                    <div class="price__list">
+                        <p class="price__list-item">Pro</p>
+                        <p class="price__list-item">$30</p>
+                        <p class="price__list-item">Free for life</p>
+                        <p class="price__list-item">1 gb of space</p>
+                        <p class="price__list-item">1 gb of space</p>
+                        <p class="price__list-item">1 gb of space</p>
+                        <p class="price__list-item">1 gb of space</p>
+                        <p class="price__list-item">1 gb of space</p>
+                        <p class="price__list-item">1 gb of space</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -252,54 +248,53 @@
             <div class="content-box">
                 <h2 class="reviews__main-title">what our customers are saying</h2>
                 <div class="separator">
-                    <hr>
                 </div>
                 <p class="reviews__subtitle">Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit.
                 </p>
                 <div class="reviews__container">
                     <ul class="reviews__author-list">
-                        <li class="author-list__views-item"><p class="views-item_text">Lorem ipsum dolor sit amet, 
+                        <li class="reviews__list-item"><p class="reviews__item-text">Lorem ipsum dolor sit amet, 
                             consectetur adipisicing elit. Doloribus 
                             accusamus expedita repellat similique 
                             odio aspernatur ex, architecto eaque 
                             quo suscipit.</p>
                         </li>
-                        <li class="author-list__views-item"> <img src="./img/triangle.svg" alt="triangle" class="views-item__triangle"></li>
-                        <li class="author-list__views-item"><img src="./img/authors/DRM.png" alt="photo-author" class="views-item__photo"> 
-                            <div class="views-item__box">
-                                <h4 class="views-item__name">Davis Rhiel Madsen</h4>
-                                <p class="views-item__position">Manager</p>
+                        <li class="reviews__list-item"> <img src="./img/triangle.svg" alt="triangle" class="reviews__item-triangle"></li>
+                        <li class="reviews__list-item"><img src="./img/authors/DRM.png" alt="photo-author" class="reviews__item-photo"> 
+                            <div class="reviews__author-box">
+                                <h4 class="reviews__author-name">Davis Rhiel Madsen</h4>
+                                <p class="reviews__author-position">Manager</p>
                             </div>
                         </li>
                     </ul>
                     <ul class="reviews__author-list">
-                        <li class="author-list__views-item"><p class="views-item_text">Lorem ipsum dolor sit amet, 
+                        <li class="reviews__list-item"><p class="reviews__item-text">Lorem ipsum dolor sit amet, 
                             consectetur adipisicing elit. Doloribus 
                             accusamus expedita repellat similique 
                             odio aspernatur ex, architecto eaque 
                             quo suscipit.</p>
                         </li>
-                        <li class="author-list__views-item"> <img src="./img/triangle.svg" alt="triangle" class="views-item__triangle"></li>
-                        <li class="author-list__views-item"><img src="./img/authors/JR.png" alt="photo-author" class="views-item__photo"> 
-                            <div class="views-item__box">
-                                <h4 class="views-item__name">Jaydon Rosser</h4>
-                                <p class="views-item__position">Manager</p>
+                        <li class="reviews__list-item"> <img src="./img/triangle.svg" alt="triangle" class="reviews__item-triangle"></li>
+                        <li class="reviews__list-item"><img src="./img/authors/JR.png" alt="photo-author" class="reviews__item-photo"> 
+                            <div class="reviews__author-box">
+                                <h4 class="reviews__author-name">Jaydon Rosser</h4>
+                                <p class="reviews__author-position">Manager</p>
                             </div>
                         </li>
                     </ul>
                     <ul class="reviews__author-list">
-                        <li class="author-list__views-item"><p class="views-item_text">Lorem ipsum dolor sit amet, 
+                        <li class="reviews__list-item"> <p class="reviews__item-text">Lorem ipsum dolor sit amet, 
                             consectetur adipisicing elit. Doloribus 
                             accusamus expedita repellat similique 
                             odio aspernatur ex, architecto eaque 
                             quo suscipit.</p>
                         </li>
-                        <li class="author-list__views-item"> <img src="./img/triangle.svg" alt="triangle" class="views-item__triangle"></li>
-                        <li class="author-list__views-item"><img src="./img/authors/CD.png" alt="photo-author" class="views-item__photo"> 
-                            <div class="views-item__box">
-                                <h4 class="views-item__name">Cooper Dorwart</h4>
-                                <p class="views-item__position">Manager</p>
+                        <li class="reviews__list-item"> <img src="./img/triangle.svg" alt="triangle" class="reviews__item-triangle"></li>
+                        <li class="reviews__list-item"><img src="./img/authors/CD.png" alt="photo-author" class="reviews__item-photo"> 
+                            <div class="reviews__author-box">
+                                <h4 class="reviews__author-name">Cooper Dorwart</h4>
+                                <p class="reviews__author-position">Manager</p>
                             </div>
                         </li>
                     </ul>
@@ -312,8 +307,7 @@
                 <h2 class="banner-second__main-title">
                     STYLISH AXURE DESIGN
                 </h2>
-                <div class="banner-second__separator">
-                    <hr>
+                <div class="separator separator--banner-second">
                 </div>
                 <p class="banner-second__subtitle">Use the sections you need, remove the ones you don't.  
                     Create gorgeous prototypes faster than ever!
@@ -329,28 +323,30 @@
                     contact us
                 </h2>
                 <div class="separator">
-                    <hr>
                 </div>
                 <p class="contact__subtitle">Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit.
                 </p>
-                <form action="#" class="contact__contact-form">
-                    <div class="test">
-                        <label for="Username" class="contact-form__label">Name <br>
-                            <input type="text" name="Username" class="contact-form__input">
-                        </label>
-                        <label for="Email" class="contact-form__label">Email <br>
-                            <input type="email" name="Email" class="contact-form__input">
-                        </label>
-                        <label for="password" class="contact-form__label">Password <br>
-                            <input type="password" name="password" class="contact-form__input">
-                        </label>
+                <form action="#" class="contact__form">
+                    <div class="box--wrapper">
+                        <div class="contact__form-box">
+                            <label for="Username" class="contact__label">Name </label>
+                            <input type="text" name="Username" class="contact__input">
+                            
+                            <label for="Email" class="contact__label">Email </label>
+                            <input type="email" name="Email" class="contact__input">
+                            
+                            <label for="password" class="contact__label">Password </label>
+                            <input type="password" name="password" class="contact__input">
+                            
+                        </div>
+                        <div class="contact__comment-box">
+                            <label for="Message" class="contact__label">Message </label> <textarea name="Message" class="contact__comment"></textarea>
+                        </div>  
                     </div>
-                    <label for="Message" class="contact-form__label">Message <br><textarea name="Message" class="contact-form__comment"></textarea>
-                    </label>
-                    
+                    <button type="button" class="contact__button">Send Message</button>
                 </form>
-                <button type="button" class="contact__button">Send Message</button>
+                
                 
             </div>
         </section>
@@ -368,5 +364,6 @@
                 <p class="footer__copy">© 2015 Axure Themes</p>
             </div>
         </footer>
+        <script src="./js/index.js"></script>
     </body>
 </html>
