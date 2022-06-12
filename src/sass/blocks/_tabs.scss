@@ -29,18 +29,13 @@
         }
     }
     &__inner-box {
-        padding: 50px 0 0 100px;
+        padding: 50px 50px 0 100px;
     }
     &__title {
         @include fontStyle($fontOpenSans,$fontBold,1.875rem);
         margin-bottom: 40px;
     }
     &__text {
-        padding: 5px 40px 0 0;
         margin-bottom: 30px;
-    }
-    &__image {
-        max-width: 470px;
-        max-height: 500px;
     }
 }

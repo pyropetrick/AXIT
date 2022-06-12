@@ -8,8 +8,10 @@
     }
 
     &__logo {
-        max-width: 55px;
-        max-height: 35px;
+        
+        &-link {
+            display: flex;
+        }
     }
 }
 

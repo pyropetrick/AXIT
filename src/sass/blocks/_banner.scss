@@ -16,11 +16,10 @@
     }
     
     &__logo {
-        max-width: 105px;
-        max-height: 60px;
 
         &--wrapper {
             margin-bottom: 70px;
+            display: flex;
         }
     }
 
@@ -30,8 +29,7 @@
 
     &__subtitle {
         @include fontStyle(null,$fontNormal,1.125rem);
-        padding-right: 350px;
-        margin-bottom: 40px;
+        margin: 0 350px 40px 0;
     }
 
     &__box-form {
@@ -54,7 +52,7 @@
         }
 
         &-wrapper {
-            padding-left: 50px;
+            padding: 0 50px;
         }
         &-inner {
             @include flex(null,null,column);
@@ -69,7 +67,6 @@
             color: $colorGrey;
         }
         &-input {
-            width: 370px;
             border: 0;
             border-bottom: $borderInp;
             padding: 0;

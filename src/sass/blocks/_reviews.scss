@@ -48,7 +48,6 @@
     &__author {
         &-name {
             margin-bottom: 30px;
-            padding-top: 15px;
             @include fontStyle($fontOpenSans,$fontBold,1.5rem);
         }
     }

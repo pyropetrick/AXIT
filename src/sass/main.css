@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Raleway:wght@400;500&display=swap");
-.nav, .nav__list, .social-media__list, .social-media__list-item, .about-us__skill-list, .about-us__skill-icon--wrapper, .footer, .footer__foot-list {
+.nav, .nav__list, .social-media__list, .social-media__list-item, .about-us__skill-icon--wrapper, .footer, .footer__foot-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,6 +63,11 @@ ol[class] {
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 article > * + * {
@@ -211,9 +216,10 @@ body {
           align-items: center;
 }
 
-.header__logo {
-  max-width: 55px;
-  max-height: 35px;
+.header__logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav__list-item {
@@ -272,13 +278,11 @@ body {
   color: #fff;
 }
 
-.banner__logo {
-  max-width: 105px;
-  max-height: 60px;
-}
-
 .banner__logo--wrapper {
   margin-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .banner__title {
@@ -289,8 +293,7 @@ body {
 .banner__subtitle {
   font-weight: 400;
   font-size: 1.125rem;
-  padding-right: 350px;
-  margin-bottom: 40px;
+  margin: 0 350px 40px 0;
 }
 
 .banner__box-form {
@@ -325,7 +328,7 @@ body {
 }
 
 .banner__form-wrapper {
-  padding-left: 50px;
+  padding: 0 50px;
 }
 
 .banner__form-inner {
@@ -350,7 +353,6 @@ body {
 }
 
 .banner__form-input {
-  width: 370px;
   border: 0;
   border-bottom: 1px solid #BDBDBD;
   padding: 0;
@@ -448,7 +450,7 @@ body {
 }
 
 .tabs__inner-box {
-  padding: 50px 0 0 100px;
+  padding: 50px 50px 0 100px;
 }
 
 .tabs__title {
@@ -459,13 +461,7 @@ body {
 }
 
 .tabs__text {
-  padding: 5px 40px 0 0;
   margin-bottom: 30px;
-}
-
-.tabs__image {
-  max-width: 470px;
-  max-height: 500px;
 }
 
 .about-us {
@@ -482,6 +478,24 @@ body {
   color: #86878B;
   text-align: center;
   margin-bottom: 110px;
+}
+
+.about-us__skill-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-us__skill-item {
+  max-width: 370px;
 }
 
 .about-us__skill-icon {
@@ -632,7 +646,6 @@ body {
 
 .reviews__author-name {
   margin-bottom: 30px;
-  padding-top: 15px;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
