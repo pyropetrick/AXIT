@@ -4,10 +4,12 @@
         @include flex(space-between,null,null);
         padding: 15px 15px;
     }
+    &__box-title {
+        padding-top: 10px;
+    }
     &__title {
         @include fontStyle($fontOpenSans,$fontBold,1.5rem);
         color: $colorBlackText;
-        padding-top: 15px;
         margin-bottom: 25px;
     }
     &__subtitle {

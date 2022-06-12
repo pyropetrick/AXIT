@@ -379,12 +379,15 @@ body {
   padding: 15px 15px;
 }
 
+.social-media__box-title {
+  padding-top: 10px;
+}
+
 .social-media__title {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   color: #333333;
-  padding-top: 15px;
   margin-bottom: 25px;
 }
 
