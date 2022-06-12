@@ -1,0 +1,48 @@
+.header {
+    position: absolute;
+    width: 100%;
+    background-color: $colorBlack;
+
+    .content-box {
+        @include flex(space-between,center, row);
+    }
+
+    &__logo {
+        max-width: 55px;
+        max-height: 35px;
+    }
+}
+
+.nav {
+    @extend %flexCenter;
+
+    &__list {
+        @extend %flexCenter;
+
+        &-item {
+            @include fontStyle($fontOpenSans,$fontSemiBold, 0.875rem);
+            padding: 30px;
+            @extend %transitionAll;
+            
+            &:hover {
+                background-color: $colorRed;
+                @extend %cursorPointer;
+            }
+            &:active {
+                background-color: $colorDarkRed;
+            }
+        }
+
+        &-link {
+            @include textUpCenter(uppercase,null);
+            
+            &:link {
+                color: $colorWhite;
+            }
+            &:visited {
+                color: $colorWhite;
+            }
+            
+        }
+    } 
+}

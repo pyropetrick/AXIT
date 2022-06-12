@@ -1,0 +1,55 @@
+.reviews {
+    padding: 50px 0;
+
+    &__title {
+        @include fontStyle(null,null,2.25rem);
+        @include textUpCenter(uppercase,center);
+    }
+
+    &__subtitle {
+        color: $colorDarkGrey;
+        text-align: center;
+        margin-bottom: 85px;
+    }
+
+    &__container {
+        display: flex;
+        gap: 30px;
+    }
+    &__list-item {
+        &:nth-child(2) {
+            position: relative;
+        }
+        &:last-child {
+            @include flex(null,center,null);
+            margin-top: 65px;
+            gap: 30px;
+        }
+    }
+    &__item {
+        &-text {
+            background-color: #E2E2E2;
+            border-radius: 10px;
+            @include textUpCenter(null,center);
+            padding: 40px 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &-triangle {
+            position: absolute;
+            left: 70px;
+        }
+        &-photo {
+            max-width: 70px;
+            max-height: 70px;
+        }
+    } 
+
+    &__author {
+        &-name {
+            margin-bottom: 30px;
+            padding-top: 15px;
+            @include fontStyle($fontOpenSans,$fontBold,1.5rem);
+        }
+    }
+}

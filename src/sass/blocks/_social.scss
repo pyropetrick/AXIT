@@ -1,0 +1,34 @@
+.social-media {
+    background-color: $colorDarkWhite;
+    .content-box {
+        @include flex(space-between,null,null);
+        padding: 15px 15px;
+    }
+    &__title {
+        @include fontStyle($fontOpenSans,$fontBold,1.5rem);
+        color: $colorBlackText;
+        padding-top: 15px;
+        margin-bottom: 25px;
+    }
+    &__subtitle {
+        @include fontStyle(null,$fontNormal,null);
+        color: $colorDarkGrey;
+    }
+
+    &__list {
+        @extend %flexCenter;
+
+        &-item {
+            margin-right: 30px;
+            @extend %flexCenter;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__icon {
+        max-width: 60px;
+        max-height: 60px;
+    }
+}

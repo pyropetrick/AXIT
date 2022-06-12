@@ -1,0 +1,28 @@
+.footer {
+    background-color: $colorBlack;
+    @extend %flexCenter;
+    padding: 45px 0;
+
+    &__foot-list {
+        @extend %flexCenter;
+    }
+    &__copy {
+        @include textUpCenter(null,center);
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: 30px;
+    }
+}
+
+.foot-list {
+    &__item {
+        margin-right: 25px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    &__icon {
+        max-width: 55px;
+        max-height: 55px;
+    }
+}

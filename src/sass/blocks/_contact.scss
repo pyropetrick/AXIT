@@ -1,0 +1,71 @@
+.contact {
+    padding: 50px 0;
+
+    &__title {
+        @include fontStyle(null,null,2.25rem);
+        @include textUpCenter(uppercase,center);
+    }
+
+    &__subtitle {
+        color: $colorDarkGrey;
+        margin-bottom: 90px;
+        @include textUpCenter(null,center);
+    }
+
+    &__form {
+        @include flex(null,center,column);
+        gap: 50px;
+
+        &--wrapper {
+            display: flex;
+            gap: 50px;
+        }
+        &--inner {
+            @include flex(null,null,column);
+        }
+        &-label {
+            @include fontStyle($fontOpenSans,null,0.875rem);
+            color: $colorGrey;
+            margin-top: 50px;
+            &:first-child {
+                margin: 0;
+            }
+        }
+        &-input {
+            border: 0;
+            border-bottom: $borderInp;
+            width: 550px;
+            &:focus {
+                color: $colorInputBlack;
+                border-color: $colorGrey;
+                outline: 0;
+            }
+        }
+        
+    }
+    &__comment {
+        &--wrapper {
+            @include flex(null,null,column);
+        }
+        &-label {
+            @include fontStyle($fontOpenSans,null,0.875rem);
+            color: $colorGrey;
+        }
+        &-area {
+            overflow: auto;
+            resize: none;
+            border: 0;
+            border-bottom: $borderInp;
+            width: 550px;
+            height: 100%;
+            &:focus {
+                color: $colorInputBlack;
+                background-color: $colorWhite;
+                border-color: $colorGrey;
+                outline: 0;
+            }
+        }
+    }
+        
+}
+

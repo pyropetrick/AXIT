@@ -1,0 +1,31 @@
+%flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%transitionAll {
+    transition: all .3s  ease-in-out;
+}
+
+%cursorPointer {
+    cursor: pointer;
+}
+
+@mixin textUpCenter($textUp,$textCenter) {
+    text-transform: $textUp;
+    text-align: $textCenter;
+}
+
+@mixin flex($justCont, $align, $direct) {
+    display: flex;
+    justify-content: $justCont;
+    flex-direction: $direct;
+    align-items: $align;
+}
+
+@mixin fontStyle($fontFam, $fontWh, $fontSize) {
+    font-family: $fontFam;
+    font-weight: $fontWh;
+    font-size: $fontSize;
+}

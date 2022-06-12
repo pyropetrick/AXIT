@@ -1,0 +1,87 @@
+.banner {
+    height: 100vh;
+    background: linear-gradient($colorGradient), url("/src/img/background/backImg.jpg") center;
+    background-size: cover;
+
+    .content-box {
+        height: 100%;
+        @include flex(null,center,null);
+        gap: 30px;
+    }
+    
+    &__box-title {
+        display:flex;
+        flex-direction: column;
+        color: $colorWhite;
+    }
+    
+    &__logo {
+        max-width: 105px;
+        max-height: 60px;
+
+        &--wrapper {
+            margin-bottom: 70px;
+        }
+    }
+
+    &__title {
+        @include fontStyle(null, 500, 3rem);
+    }
+
+    &__subtitle {
+        @include fontStyle(null,$fontNormal,1.125rem);
+        padding-right: 350px;
+        margin-bottom: 40px;
+    }
+
+    &__box-form {
+        @include flex(space-between,center,column);
+        background-color: $colorWhite;
+        border-radius: 10px;
+    }
+    
+    &__form {
+
+        &-title {
+            margin-bottom: 75px;
+            @include fontStyle($fontOpenSans,$fontBold,1.5rem);
+            @include textUpCenter(uppercase,null);
+            padding: 30px 15px 0 15px;
+
+            span {
+                color: $colorRed;
+            }
+        }
+
+        &-wrapper {
+            padding-left: 50px;
+        }
+        &-inner {
+            @include flex(null,null,column);
+            margin-bottom: 35px;
+            
+            &:last-child {
+                margin-bottom: 75px;
+            }
+        }
+        &-label {
+            @include fontStyle($fontOpenSans,null,0.875rem);
+            color: $colorGrey;
+        }
+        &-input {
+            width: 370px;
+            border: 0;
+            border-bottom: $borderInp;
+            padding: 0;
+            
+            &:focus {
+                color: $colorInputBlack;
+                background-color: $colorWhite;
+                border-color: $colorGrey;
+                outline: 0;
+            }
+        }
+
+
+    }
+}
