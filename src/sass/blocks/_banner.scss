@@ -1,6 +1,6 @@
 .banner {
     height: 100vh;
-    background: linear-gradient($colorGradient), url("/src/img/background/backImg.jpg") center;
+    background: linear-gradient($colorGradient), url('../../img/background/backImg.jpg') center;
     background-size: cover;
 
     .content-box {

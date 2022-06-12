@@ -1,6 +1,6 @@
 .banner-second {
     padding: 100px 0 50px;  
-    background: linear-gradient($colorGradient), url(/src/img/background/bannerSec.jpg);
+    background: linear-gradient($colorGradient), url('../../img/background/bannerSec.jpg');
     background-size: cover;
     
     &__title {
