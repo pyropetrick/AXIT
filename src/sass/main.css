@@ -245,8 +245,8 @@ body {
 
 .banner {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../img/background/backImg.jpg") center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/background/backImg.jpg") center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("./backImg.jpg") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url("./backImg.jpg") center;
   background-size: cover;
 }
 
@@ -640,8 +640,8 @@ body {
 
 .banner-second {
   padding: 100px 0 50px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../img/background/bannerSec.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/background/bannerSec.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("./bannerSec.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url("./bannerSec.jpg");
   background-size: cover;
 }
 
