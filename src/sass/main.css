@@ -16,7 +16,7 @@
   transition: all .3s  ease-in-out;
 }
 
-.button:hover, .nav__list-item:hover, .tabs__nav-btn {
+.button:hover, .nav__list-item:hover, .tabs__nav-btn, .price__list-item {
   cursor: pointer;
 }
 

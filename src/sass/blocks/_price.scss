@@ -29,6 +29,7 @@
             border: 1px solid $colorWhitePrice;
             background-color: $colorBlackText;
             color: $colorWhite;
+            @extend %cursorPointer;
 
             &:first-child {
                 @include fontStyle($fontOpenSans,$fontBold,1.5rem);
