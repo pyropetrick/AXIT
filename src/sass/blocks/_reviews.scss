@@ -23,16 +23,25 @@
         
     }
     &__comment-text {
+        overflow: hidden;
             &--wrapper {
                 background-color: #E2E2E2;
                 border-radius: 10px;
                 @include textUpCenter(null,center);
                 padding: 40px 20px;
-                overflow: hidden;
                 text-overflow: ellipsis;
                 word-break: break-word;
                 max-width: 370px;
                 max-height: 180px;
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 20px;
+                    bottom: -20px;
+                    border: 10px solid transparent;
+                    border-top: 10px solid #E2E2E2;
+                }
             }
         }
 
