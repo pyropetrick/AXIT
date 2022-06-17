@@ -16,33 +16,29 @@
         display: flex;
         gap: 30px;
     }
-    &__list-item {
-        &:nth-child(2) {
-            position: relative;
-        }
-        &:last-child {
-            @include flex(null,center,null);
-            margin-top: 65px;
-            gap: 30px;
-        }
+    &__author-block {
+        @include flex(null,center,null);
+        margin-top: 65px;
+        gap: 30px;
+        
     }
-    &__item {
-        &-text {
-            background-color: #E2E2E2;
-            border-radius: 10px;
-            @include textUpCenter(null,center);
-            padding: 40px 20px;
-            overflow: hidden;
-            text-overflow: ellipsis;
+    &__comment-text {
+            &--wrapper {
+                background-color: #E2E2E2;
+                border-radius: 10px;
+                @include textUpCenter(null,center);
+                padding: 40px 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-break: break-word;
+                max-width: 370px;
+                max-height: 180px;
+            }
         }
-        &-triangle {
-            position: absolute;
-            left: 70px;
-        }
-        &-photo {
-            max-width: 70px;
-            max-height: 70px;
-        }
+
+    &__author-avatar {
+        max-width: 70px;
+        max-height: 70px;
     } 
 
     &__author {

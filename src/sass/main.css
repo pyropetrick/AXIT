@@ -16,7 +16,7 @@
   transition: all .3s  ease-in-out;
 }
 
-.button:hover, .nav__list-item:hover, .tabs__nav-btn, .price__list-item {
+.button:hover, .nav__list-item:hover, .tabs__nav-btn, .price__list-item > p {
   cursor: pointer;
 }
 
@@ -539,7 +539,7 @@ body {
   margin-bottom: 80px;
 }
 
-.price__container {
+.price__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -550,18 +550,18 @@ body {
       flex-wrap: wrap;
 }
 
-.price__list {
+.price__list-item {
   width: 370px;
 }
 
-.price__list--active {
+.price__list-item--active {
   -webkit-filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
           filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
 
-.price__list-item {
+.price__list-item > p {
   text-align: center;
   padding: 15px 0;
   border: 1px solid #f5f5f5;
@@ -569,22 +569,22 @@ body {
   color: #fff;
 }
 
-.price__list-item:first-child {
+.price__list-item .price__name-sub {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
 }
 
-.price__list-item:nth-child(2) {
+.price__list-item .price__cost {
   font-weight: 700;
   font-size: 2.25rem;
 }
 
-.price__list-item:nth-child(3) {
+.price__list-item .price__duration {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.price__list-item:nth-child(1n+4) {
+.price__list-item .price__desc {
   background-color: #fff;
   color: #86878B;
   text-transform: capitalize;
@@ -613,11 +613,7 @@ body {
   gap: 30px;
 }
 
-.reviews__list-item:nth-child(2) {
-  position: relative;
-}
-
-.reviews__list-item:last-child {
+.reviews__author-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -628,21 +624,19 @@ body {
   gap: 30px;
 }
 
-.reviews__item-text {
+.reviews__comment-text--wrapper {
   background-color: #E2E2E2;
   border-radius: 10px;
   text-align: center;
   padding: 40px 20px;
   overflow: hidden;
   text-overflow: ellipsis;
+  word-break: break-word;
+  max-width: 370px;
+  max-height: 180px;
 }
 
-.reviews__item-triangle {
-  position: absolute;
-  left: 70px;
-}
-
-.reviews__item-photo {
+.reviews__author-avatar {
   max-width: 70px;
   max-height: 70px;
 }
