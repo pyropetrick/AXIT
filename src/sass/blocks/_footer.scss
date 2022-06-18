@@ -5,6 +5,7 @@
 
     &__list {
         @extend %flexCenter;
+        margin-bottom: 30px;
         
         &-item {
             margin-right: 25px;
@@ -20,7 +21,7 @@
     &__copy {
         @include textUpCenter(null,center);
         color: rgba(255, 255, 255, 0.5);
-        margin-top: 30px;
+        
     }
     
 }

@@ -39,8 +39,8 @@ h3,
 h4,
 h5,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -691,6 +691,9 @@ body {
   background-color: #000000;
   padding: 45px 0;
 }
+.footer__list {
+  margin-bottom: 30px;
+}
 .footer__list-item {
   margin-right: 25px;
 }
@@ -704,5 +707,4 @@ body {
 .footer__copy {
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
-  margin-top: 30px;
 }/*# sourceMappingURL=main.css.map */
