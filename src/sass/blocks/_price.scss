@@ -18,10 +18,12 @@
     }
     &__list-item {
         width: 370px;
+        @extend %transitionAll;
 
-        &--active {
+        &:hover {
             filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
             transform: translateY(-20px);
+            @extend %cursorPointer;
         }
 
         &>p {
@@ -30,7 +32,6 @@
             border: 1px solid $colorWhitePrice;
             background-color: $colorBlackText;
             color: $colorWhite;
-            @extend %cursorPointer;
         }
         .price__name-sub {
             @include fontStyle($fontOpenSans,$fontBold,1.5rem);

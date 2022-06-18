@@ -19,11 +19,9 @@
     &__user-block {
         @include flex(null,center,null);
         margin-top: 65px;
-        gap: 30px;
         
     }
     &__comment-text {
-        // overflow: auto;
             &--wrapper {
                 background-color: #E2E2E2;
                 border-radius: 10px;
@@ -32,7 +30,6 @@
                 text-overflow: ellipsis;
                 word-break: break-word;
                 max-width: 370px;
-                max-height: 180px;
                 position: relative;
                 &:after {
                     content: '';
@@ -50,6 +47,7 @@
     &__user-avatar {
         max-width: 70px;
         max-height: 70px;
+        margin-right: 30px;
     } 
 
     &__user {

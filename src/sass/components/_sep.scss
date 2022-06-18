@@ -1,15 +1,18 @@
 .separator {
     width: 170px;
     margin: 55px auto 40px;
-    border: 1px solid $colorRed;
+    height: 1px;
 
-    &--banner {
-        margin-left: 0;
-        margin-right: 0;
-        border: $borderSep;
+    &--white {
+        background-color: $colorWhite;
     }
 
-    &--banner-second {
-        border: $borderSep;
+    &--red {
+        background-color: $colorRed;
+    }
+
+    &--margin {
+        margin-left: 0;
+        margin-right: 0;
     }
 }

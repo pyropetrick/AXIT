@@ -26,22 +26,22 @@ function onTabClick(item) {
 }
 document.querySelector(".tabs__nav-btn").click();
 
-// price-list
+// // price-list
 
-const priceList = document.querySelectorAll(".price__list-item");
+// const priceList = document.querySelectorAll(".price__list-item");
 
-priceList.forEach(onPriceHover);
+// priceList.forEach(onPriceHover);
 
-function onPriceHover(item) {
-    item.addEventListener("mouseover", function() {
-        let currentItem = item;
-        if (!currentItem.classList.contains('price__list-item--active')) {
-            priceList.forEach(function(item) {
-                item.classList.remove('price__list-item--active');
-            })
-            currentItem.classList.add('price__list-item--active');
-        }
-    })
-}
+// function onPriceHover(item) {
+//     item.addEventListener("mouseover", function() {
+//         let currentItem = item;
+//         if (!currentItem.classList.contains('price__list-item--active')) {
+//             priceList.forEach(function(item) {
+//                 item.classList.remove('price__list-item--active');
+//             })
+//             currentItem.classList.add('price__list-item--active');
+//         }
+//     })
+// }
 
-document.querySelector(".price__list-item:nth-child(2)").click();
+// document.querySelector(".price__list-item:nth-child(2)").click();
