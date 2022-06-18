@@ -1,0 +1,45 @@
+.input {
+    border: 0;
+    border-bottom: $borderInp;
+    padding: 10px;
+    padding-left: 0;
+    
+    &::-webkit-input-placeholder {
+        @include fontStyle($fontOpenSans,null,0.875rem);
+        color: $colorGrey;
+    }
+    &::-moz-placeholder {
+        @include fontStyle($fontOpenSans,null,0.875rem);
+        color: $colorGrey;
+    }
+
+    &:focus {
+        color: $colorInputBlack;
+        background-color: $colorWhite;
+        border-color: $colorGrey;
+        outline: 0;
+    }
+}
+
+.text-area {
+    overflow: auto;
+    resize: none;
+    border: 0;
+    border-bottom: $borderInp;
+    width: 550px;
+    height: 100%;
+    &:focus {
+        color: $colorInputBlack;
+        background-color: $colorWhite;
+        border-color: $colorGrey;
+        outline: 0;
+    }
+    &::-webkit-input-placeholder {
+        @include fontStyle($fontOpenSans,null,0.875rem);
+        color: $colorGrey;
+    }
+    &::-moz-placeholder {
+        @include fontStyle($fontOpenSans,null,0.875rem);
+        color: $colorGrey;
+    }
+}

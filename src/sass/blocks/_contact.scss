@@ -20,52 +20,17 @@
             display: flex;
             gap: 50px;
         }
-        &--inner {
-            @include flex(null,null,column);
-        }
-        &-label {
-            @include fontStyle($fontOpenSans,null,0.875rem);
-            color: $colorGrey;
-            margin-top: 50px;
-            &:first-child {
-                margin: 0;
-            }
-        }
         &-input {
-            border: 0;
-            border-bottom: $borderInp;
+            @include flex(null,null,column);
+            gap: 50px;
             width: 550px;
-            &:focus {
-                color: $colorInputBlack;
-                border-color: $colorGrey;
-                outline: 0;
-            }
         }
-        
-    }
     &__comment {
         &--wrapper {
             @include flex(null,null,column);
-        }
-        &-label {
-            @include fontStyle($fontOpenSans,null,0.875rem);
-            color: $colorGrey;
-        }
-        &-area {
-            overflow: auto;
-            resize: none;
-            border: 0;
-            border-bottom: $borderInp;
-            width: 550px;
-            height: 100%;
-            &:focus {
-                color: $colorInputBlack;
-                background-color: $colorWhite;
-                border-color: $colorGrey;
-                outline: 0;
-            }
         }
     }
         
 }
 
+}

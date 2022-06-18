@@ -50,11 +50,10 @@
                 color: $colorRed;
             }
         }
-
         &-wrapper {
             padding: 0 50px;
         }
-        &-inner {
+        &-input {
             @include flex(null,null,column);
             margin-bottom: 35px;
             
@@ -62,23 +61,5 @@
                 margin-bottom: 75px;
             }
         }
-        &-label {
-            @include fontStyle($fontOpenSans,null,0.875rem);
-            color: $colorGrey;
-        }
-        &-input {
-            border: 0;
-            border-bottom: $borderInp;
-            padding: 0;
-            
-            &:focus {
-                color: $colorInputBlack;
-                background-color: $colorWhite;
-                border-color: $colorGrey;
-                outline: 0;
-            }
-        }
-
-
     }
 }
