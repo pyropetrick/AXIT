@@ -16,14 +16,14 @@
         display: flex;
         gap: 30px;
     }
-    &__author-block {
+    &__user-block {
         @include flex(null,center,null);
         margin-top: 65px;
         gap: 30px;
         
     }
     &__comment-text {
-        overflow: hidden;
+        // overflow: auto;
             &--wrapper {
                 background-color: #E2E2E2;
                 border-radius: 10px;
@@ -37,20 +37,22 @@
                 &:after {
                     content: '';
                     position: absolute;
-                    left: 20px;
-                    bottom: -20px;
-                    border: 10px solid transparent;
-                    border-top: 10px solid #E2E2E2;
+                    left: 20%;
+                    bottom: -4%;
+                    width: 15px;
+                    height: 15px;
+                    background: #E2E2E2;
+                    transform: rotate(45deg);
                 }
             }
         }
 
-    &__author-avatar {
+    &__user-avatar {
         max-width: 70px;
         max-height: 70px;
     } 
 
-    &__author {
+    &__user {
         &-name {
             margin-bottom: 30px;
             @include fontStyle($fontOpenSans,$fontBold,1.5rem);

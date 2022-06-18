@@ -648,7 +648,7 @@ body {
   gap: 30px;
 }
 
-.reviews__author-block {
+.reviews__user-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -657,10 +657,6 @@ body {
           align-items: center;
   margin-top: 65px;
   gap: 30px;
-}
-
-.reviews__comment-text {
-  overflow: hidden;
 }
 
 .reviews__comment-text--wrapper {
@@ -678,18 +674,21 @@ body {
 .reviews__comment-text--wrapper:after {
   content: '';
   position: absolute;
-  left: 20px;
-  bottom: -20px;
-  border: 10px solid transparent;
-  border-top: 10px solid #E2E2E2;
+  left: 20%;
+  bottom: -4%;
+  width: 15px;
+  height: 15px;
+  background: #E2E2E2;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
-.reviews__author-avatar {
+.reviews__user-avatar {
   max-width: 70px;
   max-height: 70px;
 }
 
-.reviews__author-name {
+.reviews__user-name {
   margin-bottom: 30px;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
