@@ -20,6 +20,10 @@
     &__list {
         @extend %flexCenter;
 
+        &-link {
+        
+        }
+
         &-item {
             margin-right: 30px;
             @extend %flexCenter;

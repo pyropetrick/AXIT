@@ -24,6 +24,11 @@
     align-items: $align;
 }
 
+@mixin fontSize($size) {
+    font-size: calc($size / 16) + rem;
+}
+
+
 @mixin fontStyle($fontFam, $fontWh, $fontSize) {
     font-family: $fontFam;
     font-weight: $fontWh;

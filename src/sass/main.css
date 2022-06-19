@@ -11,7 +11,7 @@
           align-items: center;
 }
 
-.price__list-item, .nav__list-item, .button {
+.price__list-item, .nav__list-item, .icon, .button {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -237,6 +237,32 @@ body {
 }
 .title--white {
   color: #fff;
+}
+
+.icon {
+  font-size: 3.125rem;
+  color: #CCCCCC;
+}
+.icon-facebook.social-media__list-link:hover {
+  color: #4267B3;
+}
+.icon-twitter.social-media__list-link:hover {
+  color: #55ACEE;
+}
+.icon-linkedin.social-media__list-link:hover {
+  color: #0A66C2;
+}
+.icon-pinterest.social-media__list-link:hover {
+  color: #E60023;
+}
+.icon-instagram.social-media__list-link:hover {
+  color: #C13584;
+}
+.icon-github.social-media__list-link:hover {
+  color: #211F1F;
+}
+.icon-rss.social-media__list-link:hover {
+  color: #ee802f;
 }
 
 .header {
