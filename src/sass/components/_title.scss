@@ -1,0 +1,8 @@
+.title {
+    @include fontStyle($fontRaleway,$fontNormal,2.25rem);
+    @include textUpCenter(uppercase,center);
+
+    &--white {
+        color: $colorWhite;
+    }
+}

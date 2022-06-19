@@ -3,12 +3,6 @@
     background: linear-gradient($colorGradient), url('../img/background/bannerSec.jpg');
     background-size: cover;
     
-    &__title {
-        @include fontStyle(null,null,2.25rem);
-        color: $colorWhite;
-        @include textUpCenter(uppercase,center);
-    }
-    
     &__subtitle {
         color: $colorWhite;
         margin-bottom: 75px;

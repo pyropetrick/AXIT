@@ -228,6 +228,17 @@ body {
   color: #BDBDBD;
 }
 
+.title {
+  font-family: "Raleway", "sans-serif";
+  font-weight: 400;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.title--white {
+  color: #fff;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -621,12 +632,6 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../img/background/bannerSec.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/background/bannerSec.jpg");
   background-size: cover;
-}
-.banner-second__title {
-  font-size: 2.25rem;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
 }
 .banner-second__subtitle {
   color: #fff;
