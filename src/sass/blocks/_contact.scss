@@ -1,11 +1,6 @@
 .contact {
     padding: 50px 0;
-
-    &__title {
-        @include fontStyle(null,null,2.25rem);
-        @include textUpCenter(uppercase,center);
-    }
-
+    
     &__subtitle {
         color: $colorDarkGrey;
         margin-bottom: 90px;

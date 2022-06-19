@@ -1,11 +1,6 @@
 .about-us {
     padding: 50px 0;
 
-    &__title {
-        @include fontStyle(null,$fontNormal,2.25rem);
-        text-align: center;
-    }
-
     &__subtitle {
         color: $colorDarkGrey;
         text-align: center;
