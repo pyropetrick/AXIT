@@ -431,10 +431,6 @@ body {
 .social-media__list-item:last-child {
   margin-right: 0;
 }
-.social-media__icon {
-  max-width: 60px;
-  max-height: 60px;
-}
 
 .tabs {
   padding: 100px 0 50px;
