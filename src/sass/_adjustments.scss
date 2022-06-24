@@ -67,12 +67,21 @@ select {
 }
 
 body {
-  @include fontStyle($fontRaleway, $fontNormal, 1.125rem)
+  @include fontStyle($fontRaleway, $fontNormal, 18)
   
 }
 
 .content-box {
   padding: 0 15px;
   margin: $marginCenter;
-  width: 1200px;
+  width: var(--large-container);
+  
+  @include mediaTablet {
+    width: 984px;
+  }
+
+  @include mediaMobile { 
+    width: 100%;
+    padding: 0 20px;
+  }
 }

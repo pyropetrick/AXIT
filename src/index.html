@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
         <link rel="stylesheet" href="./styles/normalize.css">
         <link rel="stylesheet" href="./styles/iconFonts.css">
         <link rel="stylesheet" href="./sass/main.css">
@@ -14,13 +15,14 @@
                     <a href="#" class="header__logo-link"><img src="./img/logo/AX.png" alt="AX" class="header__logo header__logo--AX">
                     <img src="./img/logo/IT.png" alt="IT" class= "header__logo header__logo--IT"></a>
                 </div>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__list-item"><a href="#" class="nav__list-link">Features</a></li>
-                        <li class="nav__list-item"><a href="#" class="nav__list-link">About</a></li>
-                        <li class="nav__list-item"><a href="#" class="nav__list-link">Pricing</a></li>
-                        <li class="nav__list-item"><a href="#" class="nav__list-link">Reviews</a></li>
-                        <li class="nav__list-item"><a href="#" class="nav__list-link">Contact</a></li>
+                <button class="menu-burger icon-bars icon"></button>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item"><a href="#" class="menu__list-link">Features</a></li>
+                        <li class="menu__list-item"><a href="#" class="menu__list-link">About</a></li>
+                        <li class="menu__list-item"><a href="#" class="menu__list-link">Pricing</a></li>
+                        <li class="menu__list-item"><a href="#" class="menu__list-link">Reviews</a></li>
+                        <li class="menu__list-item"><a href="#" class="menu__list-link">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -163,7 +165,7 @@
                 <ul class="about-us__skill-list">
                     <li class="about-us__skill-item">
                         <div class="about-us__skill-icon--wrapper">
-                            <img src="./img/about/Vector.svg" alt="image-wrapper" class="about-us__skill-icon">
+                            <div class="about-us__skill-icon icon-bulb icon"></div>
                         </div>
                         <h4 class="about-us__skill-title">Thoughtful Design</h4>
                         <p class="about-us__skill-text">Lorem ipsum dolor sit amet, 
@@ -174,7 +176,7 @@
                     </li>
                     <li class="about-us__skill-item">
                         <div class="about-us__skill-icon--wrapper">
-                            <img src="./img/about/Vector2.svg" alt="image-wrapper" class="about-us__skill-icon">
+                            <div class="about-us__skill-icon icon-keybord icon"></div>
                         </div>
                         <h4 class="about-us__skill-title">Thoughtful Design</h4>
                         <p class="about-us__skill-text">Lorem ipsum dolor sit amet, 
@@ -185,7 +187,7 @@
                     </li>
                     <li class="about-us__skill-item"> 
                         <div class="about-us__skill-icon--wrapper">
-                            <img src="./img/about/Vector3.svg" alt="image-wrapper" class="about-us__skill-icon">
+                            <div class="about-us__skill-icon icon-bolt icon"></div>
                         </div>
                         <h4 class="about-us__skill-title">Thoughtful Design</h4>
                         <p class="about-us__skill-text">Lorem ipsum dolor sit amet, 
@@ -251,7 +253,7 @@
                     consectetur adipiscing elit.
                 </p>
                 <div class="reviews__comments">
-                    <div class="reviews__comment-block">
+                    <div class="reviews__comment-block " id="dotFirst">
                         <div class="reviews__comment-text--wrapper"><p class="reviews__comment-text">Lorem ipsum dolor sit amet, 
                             consectetur adipisicing elit. Doloribus 
                             accusamus expedita repellat similique 
@@ -265,7 +267,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="reviews__comment-block">
+                    <div class="reviews__comment-block" id="dotSecond">
                         <div class="reviews__comment-text--wrapper"><p class="reviews__comment-text">Lorem ipsum dolor sit amet, 
                             consectetur adipisicing elit. Doloribus 
                             accusamus expedita repellat similique 
@@ -279,7 +281,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="reviews__comment-block">
+                    <div class="reviews__comment-block" id="dotThird">
                         <div class="reviews__comment-text--wrapper"> <p class="reviews__comment-text">Lorem ipsum dolor sit amet, 
                             consectetur adipisicing elit. Doloribus 
                             accusamus expedita repellat similique 
@@ -293,6 +295,11 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="dots-nav">
+                    <button class="dots-nav__btn icon icon-circle" type="button" data-tab ="#dotFirst"></button>
+                    <button class="dots-nav__btn icon icon-circle" type="button" data-tab ="#dotSecond"></button>
+                    <button class="dots-nav__btn icon icon-circle" type="button" data-tab ="#dotThird"></button>
                 </div>
             </div>
 

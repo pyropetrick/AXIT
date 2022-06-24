@@ -2,6 +2,10 @@
     width: 170px;
     margin: 55px auto 40px;
     height: 1px;
+    @include mediaMobile {
+        width: 135px;
+        margin: 40px auto;
+    }
 
     &--white {
         background-color: $colorWhite;

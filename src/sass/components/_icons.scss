@@ -1,27 +1,70 @@
 .icon {
-    @include fontSize(50);
-    color: $colorIcon;
-    @extend %transitionAll;
+  &-facebook.social-media__list-link:hover {
+    color: #4267b3;
+  }
+  &-twitter.social-media__list-link:hover {
+    color: #55acee;
+  }
+  &-linkedin.social-media__list-link:hover {
+    color: #0a66c2;
+  }
+  &-pinterest.social-media__list-link:hover {
+    color: #e60023;
+  }
+  &-instagram.social-media__list-link:hover {
+    color: #c13584;
+  }
+  &-github.social-media__list-link:hover {
+    color: #211f1f;
+  }
+  &-rss.social-media__list-link:hover {
+    color: #ee802f;
+  }
 
-    &-facebook.social-media__list-link:hover  {
-        color: #4267B3;
+  &-bars {
+    color: rgb(215, 211, 211);
+    @include fontSize(24);
+
+    &:active {
+      color: $colorWhite;
     }
-    &-twitter.social-media__list-link:hover  {
-        color: #55ACEE;
-    } 
-    &-linkedin.social-media__list-link:hover  {
-        color: #0A66C2;
-    } 
-    &-pinterest.social-media__list-link:hover  {
-        color: #E60023;
-    }
-    &-instagram.social-media__list-link:hover  {
-        color: #C13584;
-    } 
-    &-github.social-media__list-link:hover  {
-        color: #211F1F;
-    } 
-    &-rss.social-media__list-link:hover  {
-        color: #ee802f;
-    }
+  }
+  &-keybord {
+    @include fontSize(40);
+  }
+  &-bolt {
+    @include fontSize(60);
+  }
+  &-bulb {
+    @include fontSize(60);
+  }
+}
+
+.social-media__list-link {
+  @include fontSize(50);
+  color: $colorBrand;
+  @extend %transitionAll;
+  @include mediaMobile {
+    @include fontSize(28);
+  }
+  &:hover {
+    @extend %cursorPointer;
+  }
+}
+
+.footer__list-link {
+  @include fontSize(50);
+  color: $colorBrand;
+  @extend %transitionAll;
+  &:hover {
+    @extend %cursorPointer;
+    color: $colorWhite;
+  }
+}
+
+.about-us__skill-icon {
+  border-radius: 50%;
+  border: 1px solid $colorRed;
+  color: $colorRed;
+  padding: 25px;
 }

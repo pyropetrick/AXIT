@@ -5,11 +5,11 @@
     padding-left: 0;
     
     &::-webkit-input-placeholder {
-        @include fontStyle($fontOpenSans,null,0.875rem);
+        @include fontStyle($fontOpenSans,null,14);
         color: $colorGrey;
     }
     &::-moz-placeholder {
-        @include fontStyle($fontOpenSans,null,0.875rem);
+        @include fontStyle($fontOpenSans,null,14);
         color: $colorGrey;
     }
 
@@ -35,11 +35,11 @@
         outline: 0;
     }
     &::-webkit-input-placeholder {
-        @include fontStyle($fontOpenSans,null,0.875rem);
+        @include fontStyle($fontOpenSans,null,14);
         color: $colorGrey;
     }
     &::-moz-placeholder {
-        @include fontStyle($fontOpenSans,null,0.875rem);
+        @include fontStyle($fontOpenSans,null,14);
         color: $colorGrey;
     }
 }

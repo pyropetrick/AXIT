@@ -5,24 +5,45 @@
 
     .content-box {
         @include flex(space-between,center, row);
+        @include mediaMobile {
+            padding: 20px;
+        }
     }
 
     &__logo {
-        
+        max-width: 55px;
+        max-height: 35px;
+        @include mediaMobile { 
+            max-width: 40px;
+            max-height: 25px;
+        }
         &-link {
             display: flex;
         }
     }
 }
 
-.nav {
+.menu {
     @extend %flexCenter;
+    @include mediaMobile {
+        display: none;
+    }
+
+    &-burger {
+        display: none;
+        outline: none;
+        background:transparent;
+        border: none;
+        @include mediaMobile {
+            display: block;
+        }
+    }
 
     &__list {
         @extend %flexCenter;
 
         &-item {
-            @include fontStyle($fontOpenSans,$fontSemiBold, 0.875rem);
+            @include fontStyle($fontOpenSans,$fontSemiBold, 14);
             padding: 30px;
             @extend %transitionAll;
             

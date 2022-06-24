@@ -1,20 +1,27 @@
 .tabs {
     padding: 100px 0 50px;
+    @include mediaMobile {
+        padding: 50px 0;
+    }
 
     &__nav {
         display: flex;
         
         &-btn {
-            @include fontStyle($fontOpenSans,$fontNormal, 0.875rem);
+            @include fontStyle($fontOpenSans,$fontNormal, 14);
             @include textUpCenter(uppercase,null);
             padding: 10px 70px;
             border: 0;
             background-color: $colorWhite;
-            @extend %cursorPointer;
+            @include mediaMobile {
+                padding: 10px 30px;
+                @include fontSize(14);
+            }
             
 
             &:hover {
                 background-color: #ddd;
+                @extend %cursorPointer;
             }
             &--active {
                 border: $borderTab;
@@ -33,12 +40,27 @@
     }
     &__inner-box {
         padding: 50px 50px 0 100px;
+        @include mediaMobile {
+            padding: 30px 25px;
+        }
     }
     &__title {
-        @include fontStyle($fontOpenSans,$fontBold,1.875rem);
+        @include fontStyle($fontOpenSans,$fontBold,30);
         margin-bottom: 40px;
+        @include mediaMobile {
+            margin-bottom: 60px;
+            @include fontSize(18);
+        }
     }
     &__text {
         margin-bottom: 30px;
+        @include mediaMobile {
+            @include fontSize(13);
+        }
+    }
+    &__image {
+        @include mediaMobile {
+            display: none;
+        }
     }
 }

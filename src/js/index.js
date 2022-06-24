@@ -18,7 +18,8 @@ function onTabClick(item) {
                 item.classList.remove('tabs__box-wrap--active');
             })
             currentBtn.classList.add('tabs__nav-btn--active');
-            currentTab.classList.add('tabs__box-wrap--active')
+            currentTab.classList.add('tabs__box-wrap--active');
+
         }
         
         
@@ -26,22 +27,29 @@ function onTabClick(item) {
 }
 document.querySelector(".tabs__nav-btn").click();
 
-// // price-list
+// reviews
 
-// const priceList = document.querySelectorAll(".price__list-item");
+const dotBtn = document.querySelectorAll(".dots-nav__btn");
+const dotItem = document.querySelectorAll(".reviews__comment-block");
 
-// priceList.forEach(onPriceHover);
+dotBtn.forEach(onDotClick);
 
-// function onPriceHover(item) {
-//     item.addEventListener("mouseover", function() {
-//         let currentItem = item;
-//         if (!currentItem.classList.contains('price__list-item--active')) {
-//             priceList.forEach(function(item) {
-//                 item.classList.remove('price__list-item--active');
-//             })
-//             currentItem.classList.add('price__list-item--active');
-//         }
-//     })
-// }
+function onDotClick(item) {
+    item.addEventListener("click", function() {
+        let currentDot = item;
+        let dotId = currentDot.getAttribute("data-tab");
+        let currentDotId = document.querySelector(dotId);
 
-// document.querySelector(".price__list-item:nth-child(2)").click();
+        if (!currentDot.classList.contains('dots-nav__btn--active')) {
+            dotBtn.forEach(function(item) {
+                item.classList.remove('dots-nav__btn--active');
+            })
+            dotItem.forEach(function(item) {
+                item.classList.remove('reviews__comment-block--active');
+            })
+            currentDot.classList.add('dots-nav__btn--active');
+            currentDotId.classList.add('reviews__comment-block--active');
+        }
+    })
+}
+document.querySelector(".dots-nav__btn").click();

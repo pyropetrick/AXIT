@@ -7,44 +7,82 @@
         height: 100%;
         @include flex(null,center,null);
         gap: 30px;
+        @include mediaMobile {
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 100px 15px;
+        }
     }
     
     &__box-title {
         display:flex;
         flex-direction: column;
         color: $colorWhite;
+        @include mediaMobile {  
+            align-items: center;
+        }
     }
     
     &__logo {
-
+        max-width: 105px;
+        max-height: 55px;
+        @include mediaTablet {
+            max-width: 65px;
+            max-height: 40px;
+        }
+        @include mediaMobile {
+            display: none;
+            }
         &--wrapper {
             margin-bottom: 70px;
             display: flex;
+            @include mediaMobile {
+                margin: 0;
+            }
         }
     }
 
     &__title {
-        @include fontStyle(null, 500, 3rem);
+        @include fontStyle(null, 500, 48);
+        text-transform: uppercase;
+        @include mediaTablet {
+            @include fontSize(36);
+
+        }
+        @include mediaMobile {
+            @include fontSize(36);
+            text-align: center;
+        }
     }
 
     &__subtitle {
-        @include fontStyle(null,$fontNormal,1.125rem);
+        @include fontStyle(null,$fontNormal,18);
         margin: 0 350px 40px 0;
+        @include mediaMobile { 
+            margin: 0;
+            margin-bottom: 40px;
+            @include fontSize(14);
+        }
     }
 
     &__box-form {
         @include flex(space-between,center,column);
         background-color: $colorWhite;
         border-radius: 10px;
+        
     }
     
     &__form {
 
         &-title {
             margin-bottom: 75px;
-            @include fontStyle($fontOpenSans,$fontBold,1.5rem);
+            @include fontStyle($fontOpenSans,$fontBold,24);
             @include textUpCenter(uppercase,null);
             padding: 30px 15px 0 15px;
+            @include mediaMobile {
+                @include fontSize(14);
+                margin-bottom: 35px;
+            }
 
             span {
                 color: $colorRed;
@@ -52,6 +90,9 @@
         }
         &-wrapper {
             padding: 0 50px;
+            @include mediaMobile {
+                padding: 0 20px;
+            }
         }
         &-input {
             @include flex(null,null,column);
@@ -59,6 +100,9 @@
             
             &:last-child {
                 margin-bottom: 75px;
+                @include mediaMobile {
+                    margin-bottom: 50px;
+                }
             }
         }
     }

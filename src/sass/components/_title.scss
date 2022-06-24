@@ -1,6 +1,9 @@
 .title {
-    @include fontStyle($fontRaleway,$fontNormal,2.25rem);
+    @include fontStyle($fontRaleway,$fontNormal,36);
     @include textUpCenter(uppercase,center);
+    @include mediaMobile {
+        @include fontSize(24);
+    }
 
     &--white {
         color: $colorWhite;

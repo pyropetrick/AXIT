@@ -1,5 +1,5 @@
 .button {
-    @include fontStyle($fontOpenSans,$fontSemiBold,null);
+    @include fontStyle($fontOpenSans,$fontSemiBold,18);
     color: $colorWhite;
     @extend %transitionAll;
     &:hover {
@@ -22,12 +22,15 @@
         
     }
     &--sign {
-        font-size: 0.9375rem;
+        @include fontSize(15);
         background: $colorRed;
         border-radius: 0px 0px 10px 10px;
         width: 470px;
         padding: 20px 0;
         border: 0;
+        @include mediaMobile {
+            width: 300px;
+        }
         &:hover {
             background-color: $colorDarkRed;
         }
@@ -40,6 +43,9 @@
         width: 270px;
         padding: 15px 0;
         border: 0;
+        @include mediaMobile {
+            width: 240px;
+        }
 
         &:hover {
             background-color: $colorDarkRed;

@@ -3,18 +3,33 @@
     .content-box {
         @include flex(space-between,null,null);
         padding: 15px 15px;
+				@include mediaMobile {
+					@include flex(center, center, column);
+					padding: 30px 15px;				
+				}
     }
     &__box-title {
         padding-top: 10px;
+				@include mediaMobile {
+					text-align: center;
+				}
     }
     &__title {
-        @include fontStyle($fontOpenSans,$fontBold,1.5rem);
+        @include fontStyle($fontOpenSans,$fontBold,24);
         color: $colorBlackText;
         margin-bottom: 25px;
+				@include mediaMobile {
+					@include fontSize(18);
+				}
+				
     }
     &__subtitle {
-        @include fontStyle(null,$fontNormal,null);
+        @include fontStyle(null,$fontNormal,18);
         color: $colorDarkGrey;
+				@include mediaMobile {
+					@include fontSize(14);
+					margin-bottom: 30px;
+				}
     }
 
     &__list {
@@ -23,6 +38,9 @@
         &-item {
             margin-right: 30px;
             @extend %flexCenter;
+						@include mediaMobile {
+							margin-right: 20px;
+						}
 
             &:last-child {
                 margin-right: 0;
