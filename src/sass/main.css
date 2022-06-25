@@ -541,6 +541,7 @@ body {
     margin: 0;
     margin-bottom: 40px;
     font-size: 0.875rem;
+    text-align: center;
   }
 }
 .banner__box-form {
@@ -732,6 +733,16 @@ body {
 @media screen and (max-width: 1023px) {
   .tabs__inner-box {
     padding: 30px 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .tabs__title {
@@ -744,6 +755,7 @@ body {
   .tabs__title {
     margin-bottom: 60px;
     font-size: 1.125rem;
+    text-align: center;
   }
 }
 .tabs__text {
@@ -752,6 +764,7 @@ body {
 @media screen and (max-width: 1023px) {
   .tabs__text {
     font-size: 0.8125rem;
+    text-align: center;
   }
 }
 @media screen and (max-width: 1023px) {

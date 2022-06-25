@@ -42,6 +42,9 @@
         padding: 50px 50px 0 100px;
         @include mediaMobile {
             padding: 30px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
         }
     }
     &__title {
@@ -50,12 +53,14 @@
         @include mediaMobile {
             margin-bottom: 60px;
             @include fontSize(18);
+            text-align: center;
         }
     }
     &__text {
         margin-bottom: 30px;
         @include mediaMobile {
             @include fontSize(13);
+            text-align: center;
         }
     }
     &__image {
