@@ -5,8 +5,8 @@
 }
 
 // Убираем внутренние отступы 
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
 }
 
@@ -37,8 +37,8 @@ body {
 }
 
 // Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class
-ul[class],
-ol[class] {
+ul,
+ol {
   list-style: none;
 }
 
@@ -67,9 +67,12 @@ select {
 }
 
 body {
-  @include fontStyle($fontRaleway, $fontNormal, 18)
-  
+  @include fontStyle($fontRaleway, $fontNormal, 18);
+  &.lock {
+    overflow: hidden;
+  }
 }
+
 
 .content-box {
   padding: 0 15px;

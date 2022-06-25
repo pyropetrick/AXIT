@@ -58,23 +58,29 @@ document.querySelector(".dots-nav__btn").click();
 
 // menu-burger
 
-// function burgerMenu (selector) {
-//     let menu = $(selector);
-//     let button = menu.find('.menu-burger');
-//     let menuItem = menu.find('.menu');
-    
-//     button.on('click', function() {
-//         toogleMenu
-//     })
+const burgerBtn = document.querySelectorAll(".menu-burger");
+const menuItem = document.querySelectorAll(".menu");
 
-//     function toogleMenu () {
+burgerBtn.forEach(onMenuClick);
 
-//     }
+function onMenuClick(item) {
+    item.addEventListener("click", function(){
+        let currentBtn = item;
+        let list = document.querySelector('.menu__list');
+        let body = document.querySelector('body');
 
-// }
+        currentBtn.classList.toggle('active');
+        body.classList.toggle('lock');
+        list.classList.toggle('active');
+        if (currentBtn.classList.contains('active')) {
+            currentBtn.classList.remove('icon-bars');
+            currentBtn.classList.add('icon-xmark');
+        } else {
+            currentBtn.classList.remove('icon-xmark');
+            currentBtn.classList.add('icon-bars');
+            list.classList.remove('active');
+        }
 
-
-
-// const burgerBtn = document.querySelectorAll(".menu-burger");
-// const menuItem = document.querySelectorAll(".menu");
+    })
+}
 

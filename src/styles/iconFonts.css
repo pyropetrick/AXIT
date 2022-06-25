@@ -60,3 +60,6 @@
 .icon-circle:before {
   content: "\e904";
 }
+.icon-xmark:before {
+  content: "\e90c";
+}
