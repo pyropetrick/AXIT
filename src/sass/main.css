@@ -445,6 +445,11 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/background/backImg.jpg") center;
   background-size: cover;
 }
+@media screen and (max-width: 1023px) {
+  .banner {
+    height: 100%;
+  }
+}
 .banner .content-box {
   height: 100%;
   display: -webkit-box;

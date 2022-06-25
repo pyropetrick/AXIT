@@ -2,6 +2,9 @@
     height: 100vh;
     background: linear-gradient($colorGradient), url('../img/background/backImg.jpg') center;
     background-size: cover;
+    @include mediaMobile {
+        height: 100%;
+    }
 
     .content-box {
         height: 100%;
