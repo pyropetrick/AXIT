@@ -56,6 +56,9 @@
   @include fontSize(50);
   color: $colorBrand;
   @extend %transitionAll;
+  @include mediaMobile {
+    @include fontSize(26);
+  }
   &:hover {
     @extend %cursorPointer;
     color: $colorWhite;

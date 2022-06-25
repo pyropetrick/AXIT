@@ -5,6 +5,10 @@
         color: $colorDarkGrey;
         margin-bottom: 90px;
         @include textUpCenter(null,center);
+        @include mediaMobile {
+            margin-bottom: 65px;
+            @include fontSize(14);
+        }
     }
 
     &__form {
@@ -14,11 +18,17 @@
         &--wrapper {
             display: flex;
             gap: 50px;
+            @include mediaMobile {
+                flex-direction: column;
+            }
         }
         &-input {
             @include flex(null,null,column);
             gap: 50px;
             width: 550px;
+            @include mediaMobile {
+                width: 280px;
+            }
         }
     &__comment {
         &--wrapper {

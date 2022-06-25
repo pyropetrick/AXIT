@@ -57,6 +57,9 @@
     }
     &--width {
         width: 370px;
+        @include mediaMobile {
+            width: 280px;
+        }
     }
     &--wrapper {
         @include flex(center,null,null);

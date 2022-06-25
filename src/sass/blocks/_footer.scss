@@ -21,6 +21,9 @@
     &__copy {
         @include textUpCenter(null,center);
         color: rgba(255, 255, 255, 0.5);
+        @include mediaMobile {
+            @include fontSize(14);
+          }
         
     }
     

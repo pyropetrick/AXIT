@@ -3,6 +3,8 @@
     border-bottom: $borderInp;
     padding: 10px;
     padding-left: 0;
+    @include fontStyle($fontOpenSans,$fontNormal,14);
+    color: $colorGrey;
     
     &::-webkit-input-placeholder {
         @include fontStyle($fontOpenSans,null,14);
@@ -14,7 +16,6 @@
     }
 
     &:focus {
-        color: $colorInputBlack;
         background-color: $colorWhite;
         border-color: $colorGrey;
         outline: 0;
@@ -28,8 +29,13 @@
     border-bottom: $borderInp;
     width: 550px;
     height: 100%;
+    @include fontStyle($fontOpenSans,$fontNormal,14);
+    color: $colorGrey;
+    @include mediaMobile {
+        width: 280px;
+        height: 180px;
+    }
     &:focus {
-        color: $colorInputBlack;
         background-color: $colorWhite;
         border-color: $colorGrey;
         outline: 0;
