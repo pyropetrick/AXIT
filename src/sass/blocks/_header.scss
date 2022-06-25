@@ -39,6 +39,7 @@
         top: 0;
         left: 35%;
         
+        
         @include mediaMobile {
             display: block;
             
@@ -48,6 +49,7 @@
     
     &__list {
         @extend %flexCenter;
+        @extend %transitionAll;
         
 
         @include mediaMobile {

@@ -15,7 +15,7 @@
           align-items: center;
 }
 
-.price__list-item, .menu__list-item, .footer__list-link, .social-media__list-link, .button {
+.price__list-item, .menu__list-item, .menu__list, .footer__list-link, .social-media__list-link, .button {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
