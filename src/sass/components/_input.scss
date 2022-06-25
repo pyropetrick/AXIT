@@ -31,6 +31,9 @@
     height: 100%;
     @include fontStyle($fontOpenSans,$fontNormal,14);
     color: $colorGrey;
+    @include mediaTablet {
+        width: 480px;
+    }
     @include mediaMobile {
         width: 280px;
         height: 180px;

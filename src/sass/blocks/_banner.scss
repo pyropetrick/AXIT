@@ -2,6 +2,9 @@
     height: 100vh;
     background: linear-gradient($colorGradient), url('../img/background/backImg.jpg') center;
     background-size: cover;
+    @include mediaTablet {
+        height: 100%;
+    }
     @include mediaMobile {
         height: 100%;
     }
@@ -10,6 +13,9 @@
         height: 100%;
         @include flex(null,center,null);
         gap: 30px;
+        @include mediaTablet {
+            padding: 150px 15px 75px;
+        }
         @include mediaMobile {
             flex-direction: column;
             justify-content: space-between;
@@ -53,18 +59,21 @@
 
         }
         @include mediaMobile {
-            @include fontSize(36);
+            // @include fontSize(36);
             text-align: center;
         }
     }
 
     &__subtitle {
         @include fontStyle(null,$fontNormal,18);
-        margin: 0 350px 40px 0;
-        @include mediaMobile { 
-            margin: 0;
-            margin-bottom: 40px;
+        padding-right: 300px;
+        margin-bottom: 30px;
+        @include mediaTablet {
             @include fontSize(14);
+            padding-right: 300px;
+        }
+        @include mediaMobile { 
+            padding: 0;
             text-align: center;
         }
     }
@@ -83,6 +92,9 @@
             @include fontStyle($fontOpenSans,$fontBold,24);
             @include textUpCenter(uppercase,null);
             padding: 30px 15px 0 15px;
+            @include mediaTablet {
+                @include fontSize(24);
+            }
             @include mediaMobile {
                 @include fontSize(14);
                 margin-bottom: 35px;

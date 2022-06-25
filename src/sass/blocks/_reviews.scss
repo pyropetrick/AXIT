@@ -8,8 +8,10 @@
         color: $colorDarkGrey;
         text-align: center;
         margin-bottom: 85px;
-        @include mediaMobile {
+        @include mediaTablet {
             @include fontSize(14);
+        }
+        @include mediaMobile {
             margin-bottom: 25px;
         }
     }
@@ -55,7 +57,7 @@
                     background: #E2E2E2;
                     transform: rotate(45deg);
                 }
-                @include mediaMobile {
+                @include mediaTablet {
                     @include fontSize(14);
                 }
             }
@@ -63,11 +65,12 @@
 
     &__user-avatar {
         max-width: 70px;
-        max-height: 70px;
         margin-right: 30px;
+        @include mediaTablet {
+            max-width: 63px;
+        }
         @include mediaMobile {
             max-width: 55px;
-            max-height: 55px;
         }
     } 
 
@@ -75,6 +78,14 @@
         &-name {
             margin-bottom: 30px;
             @include fontStyle($fontOpenSans,$fontBold,24);
+            @include mediaTablet {
+                @include fontSize(18);
+            }
+        }
+        &-group {
+            @include mediaTablet {
+                @include fontSize(14);
+            }
         }
     }
 }

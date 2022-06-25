@@ -53,3 +53,28 @@ function onDotClick(item) {
     })
 }
 document.querySelector(".dots-nav__btn").click();
+
+
+
+// menu-burger
+
+// function burgerMenu (selector) {
+//     let menu = $(selector);
+//     let button = menu.find('.menu-burger');
+//     let menuItem = menu.find('.menu');
+    
+//     button.on('click', function() {
+//         toogleMenu
+//     })
+
+//     function toogleMenu () {
+
+//     }
+
+// }
+
+
+
+// const burgerBtn = document.querySelectorAll(".menu-burger");
+// const menuItem = document.querySelectorAll(".menu");
+

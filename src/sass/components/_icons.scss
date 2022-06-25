@@ -44,6 +44,9 @@
   @include fontSize(50);
   color: $colorBrand;
   @extend %transitionAll;
+  @include mediaTablet {
+    @include fontSize(45);
+  }
   @include mediaMobile {
     @include fontSize(28);
   }
@@ -56,6 +59,9 @@
   @include fontSize(50);
   color: $colorBrand;
   @extend %transitionAll;
+  @include mediaTablet {
+    @include fontSize(45);
+  }
   @include mediaMobile {
     @include fontSize(26);
   }
@@ -66,7 +72,7 @@
 }
 
 .about-us__skill-icon {
-  border-radius: 50%;
+  border-radius: 100%;
   border: 1px solid $colorRed;
   color: $colorRed;
   padding: 25px;

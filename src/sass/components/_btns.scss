@@ -10,6 +10,7 @@
         background: rgba(0, 0, 0, 0);
         padding: 15px 0px;
         width: 270px;
+        @include mediaTablet {}
         &:hover {
             color: $colorRed;
             border-color: $colorRed;
@@ -28,6 +29,9 @@
         width: 470px;
         padding: 20px 0;
         border: 0;
+        @include mediaTablet {
+            width: 400px;
+        }
         @include mediaMobile {
             width: 300px;
         }
@@ -57,6 +61,9 @@
     }
     &--width {
         width: 370px;
+        @include mediaTablet {
+            width: 300px;
+        }
         @include mediaMobile {
             width: 280px;
         }

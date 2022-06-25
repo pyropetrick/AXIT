@@ -40,6 +40,9 @@
     }
     &__inner-box {
         padding: 50px 50px 0 100px;
+        @include mediaTablet {
+            padding: 35px 35px 0 85px;
+        }
         @include mediaMobile {
             padding: 30px 25px;
             display: flex;
@@ -50,6 +53,9 @@
     &__title {
         @include fontStyle($fontOpenSans,$fontBold,30);
         margin-bottom: 40px;
+        @include mediaTablet {
+            @include fontSize(24);
+        }
         @include mediaMobile {
             margin-bottom: 60px;
             @include fontSize(18);
@@ -58,12 +64,19 @@
     }
     &__text {
         margin-bottom: 30px;
+        @include mediaTablet {
+            @include fontSize(14);
+        }
         @include mediaMobile {
             @include fontSize(13);
             text-align: center;
         }
     }
     &__image {
+        max-width: 470px;
+        @include mediaTablet {
+            max-width: 400px;   
+        }
         @include mediaMobile {
             display: none;
         }

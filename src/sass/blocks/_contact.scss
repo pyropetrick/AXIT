@@ -1,13 +1,22 @@
 .contact {
     padding: 50px 0;
+
+    .content-box {
+        @include mediaTablet {
+            padding: 0;
+        }
+    }
     
     &__subtitle {
         color: $colorDarkGrey;
         margin-bottom: 90px;
         @include textUpCenter(null,center);
+        @include mediaTablet {
+            @include fontSize(14);
+            margin-bottom: 70px;
+        }
         @include mediaMobile {
             margin-bottom: 65px;
-            @include fontSize(14);
         }
     }
 
@@ -18,6 +27,9 @@
         &--wrapper {
             display: flex;
             gap: 50px;
+            @include mediaTablet {
+                gap: 20px;
+            }
             @include mediaMobile {
                 flex-direction: column;
             }
@@ -26,6 +38,9 @@
             @include flex(null,null,column);
             gap: 50px;
             width: 550px;
+            @include mediaTablet {
+                width: 480px;
+            }
             @include mediaMobile {
                 width: 280px;
             }

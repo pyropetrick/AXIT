@@ -10,7 +10,8 @@
         color: $colorWhite;
         margin-bottom: 75px;
         @include textUpCenter(null,center);
-        @include mediaMobile {
+        
+        @include mediaTablet {
             @include fontSize(14);
         }
     }

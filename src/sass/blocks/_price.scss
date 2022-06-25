@@ -9,8 +9,11 @@
         color: $colorDarkGrey;
         @include textUpCenter(null,center);
         margin-bottom: 80px;
-        @include mediaMobile {
+        @include mediaTablet {
             @include fontSize(14);
+            margin-bottom: 30px;
+        }
+        @include mediaMobile {
             margin-bottom: 20px;
         }
     }
@@ -24,6 +27,9 @@
     &__list-item {
         width: 370px;
         @extend %transitionAll;
+        @include mediaTablet {
+            width: 300px;
+        }
         @include mediaMobile {
             margin-right: 10px;
             margin-bottom: 25px;
@@ -44,19 +50,19 @@
             border: 1px solid $colorWhitePrice;
             background-color: $colorBlackText;
             color: $colorWhite;
-            @include mediaMobile {
+            @include mediaTablet {
                 @include fontSize(14);
             }
         }
         .price__name-sub {
             @include fontStyle($fontOpenSans,$fontBold,24);
-            @include mediaMobile {
+            @include mediaTablet {
                 @include fontSize(18);
             }
         }
         .price__cost {
             @include fontStyle(null,$fontBold,36);
-            @include mediaMobile {
+            @include mediaTablet {
                 @include fontSize(24);
             }
         }

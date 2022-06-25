@@ -1,7 +1,7 @@
 .title {
     @include fontStyle($fontRaleway,$fontNormal,36);
     @include textUpCenter(uppercase,center);
-    @include mediaMobile {
+    @include mediaTablet {
         @include fontSize(24);
     }
 
