@@ -30,7 +30,7 @@
     }
   }
   &-xmark {
-    @include fontSize(24 );
+    @include fontSize(24);
     color: rgb(215, 211, 211);
     &:active {
       color: $colorWhite;

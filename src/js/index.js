@@ -66,20 +66,15 @@ burgerBtn.forEach(onMenuClick);
 function onMenuClick(item) {
     item.addEventListener("click", function(){
         let currentBtn = item;
+        let list = document.querySelector('.menu__list');
         let menu = document.querySelector('.menu');
         let body = document.querySelector('body');
 
         currentBtn.classList.toggle('active');
         body.classList.toggle('lock');
         menu.classList.toggle('active');
-        if (currentBtn.classList.contains('active')) {
-            currentBtn.classList.remove('icon-bars');
-            currentBtn.classList.add('icon-xmark');
-        } else {
-            currentBtn.classList.remove('icon-xmark');
-            currentBtn.classList.add('icon-bars');
-            list.classList.remove('active');
-        }
+        list.classList.toggle('active');
+        
 
     })
 }

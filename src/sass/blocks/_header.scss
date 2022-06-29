@@ -43,10 +43,8 @@
         position: relative;
         z-index: 2;
         
-        
         @include mediaMobile {
-            display: block;
-            
+            display: block; 
         }
     }
     
@@ -54,13 +52,13 @@
         @extend %flexCenter;
         @extend %transitionAll;
         
-
         @include mediaMobile {
+            display: block;
             text-align: center;
             position:fixed; 
             width: 100%;
             height: 100%;
-            // padding: 100px 0 0 0;
+            padding: 100px 0 0 0;
             top:100%;
             left: 0;
             background-color: black;

@@ -458,10 +458,12 @@ body.lock {
 }
 @media screen and (max-width: 1023px) {
   .menu__list {
+    display: block;
     text-align: center;
     position: fixed;
     width: 100%;
     height: 100%;
+    padding: 100px 0 0 0;
     top: 100%;
     left: 0;
     background-color: black;
