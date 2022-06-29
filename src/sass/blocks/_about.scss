@@ -39,7 +39,7 @@
             &--wrapper {
                 @extend %flexCenter;
                 margin-bottom: 30px;
-
+                
             }
         }
         &-title {
@@ -59,4 +59,14 @@
         }
     }
     
+}
+
+.inner {
+    border: 1px solid $colorRed;
+    border-radius: 50%;
+    width: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
 }

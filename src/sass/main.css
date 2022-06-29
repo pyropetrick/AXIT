@@ -162,9 +162,14 @@ body.lock {
   padding: 15px 0;
   border: 0;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1199px) {
   .button--tab {
     width: 240px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .button--tab {
+    width: 200px;
   }
 }
 .button--tab:hover {
@@ -345,15 +350,6 @@ body.lock {
 .icon-bars:active {
   color: #fff;
 }
-.icon-keybord {
-  font-size: 2.5rem;
-}
-.icon-bolt {
-  font-size: 3.75rem;
-}
-.icon-bulb {
-  font-size: 3.75rem;
-}
 .icon-xmark {
   font-size: 1.5rem;
   color: rgb(215, 211, 211);
@@ -392,13 +388,6 @@ body.lock {
 }
 .footer__list-link:hover {
   color: #fff;
-}
-
-.about-us__skill-icon {
-  border-radius: 100%;
-  border: 1px solid #EC7979;
-  color: #EC7979;
-  padding: 25px;
 }
 
 .header {
@@ -444,6 +433,16 @@ body.lock {
   display: flex;
 }
 
+@media screen and (max-width: 1023px) {
+  .menu {
+    display: none;
+  }
+  .menu.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .menu-burger {
   display: none;
   outline: none;
@@ -451,8 +450,6 @@ body.lock {
   border: none;
   position: relative;
   z-index: 2;
-  top: 0;
-  left: 35%;
 }
 @media screen and (max-width: 1023px) {
   .menu-burger {
@@ -461,12 +458,10 @@ body.lock {
 }
 @media screen and (max-width: 1023px) {
   .menu__list {
-    display: block;
     text-align: center;
     position: fixed;
     width: 100%;
     height: 100%;
-    padding: 100px 0 0 0;
     top: 100%;
     left: 0;
     background-color: black;
@@ -781,7 +776,7 @@ body.lock {
 }
 @media screen and (max-width: 1023px) {
   .tabs__nav-btn {
-    padding: 10px 30px;
+    padding: 10px 15px;
     font-size: 0.875rem;
   }
 }
@@ -954,6 +949,19 @@ body.lock {
   }
 }
 
+.inner {
+  border: 1px solid #EC7979;
+  border-radius: 50%;
+  width: 80px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .price {
   padding: 50px 0;
   background-color: #f5f5f5;
@@ -1018,6 +1026,14 @@ body.lock {
           filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
+}
+@media screen and (max-width: 1023px) {
+  .price__list-item:hover {
+    -webkit-filter: none;
+            filter: none;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 .price__list-item > p {
   text-align: center;

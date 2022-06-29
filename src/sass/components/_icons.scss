@@ -29,17 +29,8 @@
       color: $colorWhite;
     }
   }
-  &-keybord {
-    @include fontSize(40);
-  }
-  &-bolt {
-    @include fontSize(60);
-  }
-  &-bulb {
-    @include fontSize(60);
-  }
   &-xmark {
-    @include fontSize(24  );
+    @include fontSize(24 );
     color: rgb(215, 211, 211);
     &:active {
       color: $colorWhite;
@@ -78,9 +69,3 @@
   }
 }
 
-.about-us__skill-icon {
-  border-radius: 100%;
-  border: 1px solid $colorRed;
-  color: $colorRed;
-  padding: 25px;
-}

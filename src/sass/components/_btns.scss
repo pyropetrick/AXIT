@@ -47,8 +47,11 @@
         width: 270px;
         padding: 15px 0;
         border: 0;
-        @include mediaMobile {
+        @include mediaTablet {
             width: 240px;
+        }
+        @include mediaMobile {
+            width: 200px;
         }
 
         &:hover {
