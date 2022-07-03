@@ -12,6 +12,9 @@
             &:last-child {
             margin: 0;
             }
+            @include mediaMobile {
+                margin-right: 15px;
+            }
         }
         &-icon {
             max-width: 55px;

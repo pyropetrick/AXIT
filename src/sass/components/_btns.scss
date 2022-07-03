@@ -20,6 +20,9 @@
             color: $colorWhite;
             border-color: $colorDarkRed;
         }
+        @media screen and (max-width: 601px) {
+            width: 100%;
+        }
         
     }
     &--sign {
@@ -29,11 +32,15 @@
         width: 470px;
         padding: 20px 0;
         border: 0;
+        
         @include mediaTablet {
             width: 400px;
         }
         @include mediaMobile {
             width: 300px;
+        }
+        @media screen and (max-width: 601px) {
+            width: 100%;
         }
         &:hover {
             background-color: $colorDarkRed;
@@ -53,6 +60,9 @@
         @include mediaMobile {
             width: 200px;
         }
+        @media screen and (max-width: 601px) {
+            width: 100%;
+        }
 
         &:hover {
             background-color: $colorDarkRed;
@@ -69,6 +79,9 @@
         }
         @include mediaMobile {
             width: 280px;
+        }
+        @media screen and (max-width: 601px) {
+            width: 100%;
         }
     }
     &--wrapper {

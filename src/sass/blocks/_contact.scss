@@ -3,7 +3,7 @@
 
     .content-box {
         @include mediaTablet {
-            padding: 0;
+            padding: 0 15px;
         }
     }
     
