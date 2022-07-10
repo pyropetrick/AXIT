@@ -1,8 +1,9 @@
 .social-media {
     background-color: $colorDarkWhite;
+    
     .content-box {
         @include flexY(space-between);
-        padding: 15px 15px;
+        padding: 20px 15px;
 				
         @include mediaMobile {
 					@include flex(center, center, column);
@@ -10,7 +11,6 @@
 				}
     }
     &__box-title {
-        padding-top: 10px;
 				
         @include mediaMobile {
 					text-align: center;
@@ -29,11 +29,13 @@
     &__subtitle {
         @include fontStyle($fontRaleway,$fontNormal,18);
         color: $colorDarkGrey;
+        @include fontLh(21);
 				
         @include mediaMobile {
-					@include fontSize(14);
-					margin-bottom: 30px;
-				}
+            @include fontSize(14);
+            @include fontLh(16);
+            margin-bottom: 30px;
+        }
     }
 
     &__list {

@@ -64,9 +64,11 @@
     }
     &__text {
         margin-bottom: 30px;
+        @include fontLh(21);
         
         @include mediaTablet {
             @include fontSize(14);
+            @include fontLh(16);
         }
         
         @include mediaMobile {

@@ -78,10 +78,12 @@
 
     &__title {
         @include fontStyle($fontRaleway, 500, 48);
+        @include fontLh(56);
         text-transform: uppercase;
         
         @include mediaTablet {
             @include fontSize(36);
+            @include fontLh(42);
 
         }
         @include mediaMobile {
@@ -91,11 +93,13 @@
 
     &__subtitle {
         @include fontStyle($fontRaleway,$fontNormal,18);
+        @include fontLh(21);
         width: 250px;
         margin-bottom: 30px;
         
         @include mediaTablet {
             @include fontSize(14);
+            @include fontLh(16);
         }
         
         @include mediaMobile { 

@@ -46,12 +46,13 @@
     &__comment-text {
             &--wrapper {
                 background-color: #E2E2E2;
-                border-radius: 10px;
+                @include fontLh(21);
                 text-align: center;
-                padding: 40px 20px;
                 text-overflow: ellipsis;
                 word-break: break-word;
                 max-width: 370px;
+                padding: 40px 20px;
+                border-radius: 10px;
                 position: relative;
                 &:after {
                     content: '';
@@ -66,6 +67,7 @@
                 
                 @include mediaTablet {
                     @include fontSize(14);
+                    @include fontLh(16);
                 }
             }
         }
