@@ -29,17 +29,43 @@
     }
     
     &__logo {
-        max-width: 105px;
-        max-height: 55px;
-        
+        height: 55px;
         @include mediaTablet {
-            max-width: 65px;
-            max-height: 40px;
+            height: 40px;
         }
-        
         @include mediaMobile {
             display: none;
+        }
+
+        &--wrapper {
+            max-width: 270px;
+            max-height: 100px;
+
+            @include mediaTablet {
+                max-width: 180px;
+                max-height: 75px;
             }
+            
+        }
+        &--AX {
+            width: 102px;
+            
+            @include mediaTablet {
+                width: 70px;
+                
+            }
+        }
+        &--IT {
+            width: 63px;
+            
+            @include mediaTablet {
+                width: 42px;
+                
+            }
+        }
+        
+        
+        
         &--wrapper {
             margin-bottom: 70px;
             display: flex;
@@ -53,6 +79,7 @@
     &__title {
         @include fontStyle($fontRaleway, 500, 48);
         text-transform: uppercase;
+        
         @include mediaTablet {
             @include fontSize(36);
 
@@ -66,9 +93,11 @@
         @include fontStyle($fontRaleway,$fontNormal,18);
         width: 250px;
         margin-bottom: 30px;
+        
         @include mediaTablet {
             @include fontSize(14);
         }
+        
         @include mediaMobile { 
             text-align: center;
             width: 100%
