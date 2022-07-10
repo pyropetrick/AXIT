@@ -3,14 +3,12 @@
     border-bottom: $borderInp;
     padding: 10px;
     padding-left: 0;
+    width: 100%;
+    margin-bottom: 50px;
     @include fontStyle($fontOpenSans,$fontNormal,14);
     color: $colorGrey;
     
-    &::-webkit-input-placeholder {
-        @include fontStyle($fontOpenSans,$fontNormal,14);
-        color: $colorGrey;
-    }
-    &::-moz-placeholder {
+    &::placeholder {
         @include fontStyle($fontOpenSans,$fontNormal,14);
         color: $colorGrey;
     }
@@ -20,13 +18,16 @@
         border-color: $colorGrey;
         outline: none;
     }
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .text-area {
     resize: none;
     border: none;
     border-bottom: $borderInp;
-    width: 550px;
+    width: 100%;
     height: 100%;
     @include fontStyle($fontOpenSans,$fontNormal,14);
     color: $colorGrey;
@@ -45,12 +46,7 @@
         color: $colorGrey;
     }
 
-    @include mediaTablet {
-        width: 480px;
-    }
-
     @include mediaMobile {
-        width: 280px;
         height: 180px;
     }
 }
