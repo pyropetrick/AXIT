@@ -1,0 +1,24 @@
+.burger-menu {
+    display: none;
+    @include mediaMobile {
+        &--active {
+            @include flexDir(column);
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            background-color: black;
+            overflow: auto;
+        }
+    }
+    &__list {
+        @include flex(center, center,column);
+    }
+}
+
+.burger-head {
+    width: 100%;
+    @include flexXY(space-between, center);
+}

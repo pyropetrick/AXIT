@@ -2,8 +2,6 @@
 const tabsBtn = document.querySelectorAll(".tabs__nav-btn");
 const tabsItems = document.querySelectorAll(".tabs__box-wrap");
 
-tabsBtn.forEach(onTabClick);
-
 function onTabClick(item) {
     item.addEventListener("click", function() {
         let currentBtn = item;
@@ -25,14 +23,15 @@ function onTabClick(item) {
         
     })
 }
+tabsBtn.forEach(onTabClick);
+
+
 document.querySelector(".tabs__nav-btn").click();
 
 // reviews
 
 const dotBtn = document.querySelectorAll(".dots-nav__btn");
 const dotItem = document.querySelectorAll(".reviews__comment-block");
-
-dotBtn.forEach(onDotClick);
 
 function onDotClick(item) {
     item.addEventListener("click", function() {
@@ -52,30 +51,33 @@ function onDotClick(item) {
         }
     })
 }
+
+dotBtn.forEach(onDotClick);
+
 document.querySelector(".dots-nav__btn").click();
 
 
 
 // menu-burger
 
-const burgerBtn = document.querySelectorAll(".menu-burger");
-const menuItem = document.querySelectorAll(".menu");
+const burgerBtn = document.querySelectorAll(".burger-btn");
 
-burgerBtn.forEach(onMenuClick);
-
-function onMenuClick(item) {
-    item.addEventListener("click", function(){
-        let currentBtn = item;
-        let list = document.querySelector('.menu__list');
-        let menu = document.querySelector('.menu');
-        let body = document.querySelector('body');
-
-        currentBtn.classList.toggle('active');
-        body.classList.toggle('lock');
-        menu.classList.toggle('active');
-        list.classList.toggle('active');
-        
+function onBurgerClick (item) {
+    item.addEventListener("click", function() {
+        const body = document.querySelector('body');
+        const menuBurger = document.querySelector(".burger-menu");
+        const menuBurgerActive = document.querySelector(".burger-menu--active");
+        if (menuBurgerActive)  {
+            body.classList.remove('lock');
+            menuBurgerActive.classList.remove('burger-menu--active'); 
+        }
+        else  {
+            body.classList.add('lock');
+            menuBurger.classList.add("burger-menu--active"); 
+        }
 
     })
 }
+
+burgerBtn.forEach(onBurgerClick);
 
