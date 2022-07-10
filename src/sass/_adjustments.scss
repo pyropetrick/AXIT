@@ -32,8 +32,6 @@ dd {
 // Выставляем основные настройки по-умолчанию для body 
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
 }
 
 // Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class
@@ -49,8 +47,11 @@ a {
 
 // Упрощаем работу с изображениями 
 img {
-  max-width: 100%;
   display: block;
+  
+  @include mediaMobile {
+    max-width: 100%;
+  }
 }
 
 // Указываем понятную периодичность в потоке данных у article
@@ -77,7 +78,7 @@ body {
 .content-box {
   padding: 0 15px;
   margin: $marginCenter;
-  width: var(--large-container);
+  width: $largeContainer;
   
   @include mediaTablet {
     width: 984px;

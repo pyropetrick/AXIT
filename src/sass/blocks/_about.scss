@@ -17,19 +17,23 @@
     &__skill {
 
         &-list {
-            @include flex(space-between,center,null);
+            @include flexXY(space-between,center);
             flex-wrap: wrap;
+
             @include mediaMobile {
                 justify-content: center;
             }
         }
         &-item {
             max-width: 370px;
+
             @include mediaTablet {
                 max-width: 315px;
             }
+
             @include mediaMobile { 
                 margin-bottom: 40px;
+                
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -37,15 +41,16 @@
         }
         &-icon {    
             &--wrapper {
-                @extend %flexCenter;
+                @include flexCenter;
                 margin-bottom: 30px;
                 
             }
         }
         &-title {
-            @include fontStyle($fontOpenSans,null,24);
+            @include fontStyle($fontOpenSans,$fontNormal,24);
             text-align: center;
             margin-bottom: 40px;
+            
             @include mediaTablet {
                 @include fontSize(18);
             }
@@ -53,6 +58,7 @@
         &-text {
             text-align: center;
             padding: 0 15px;
+            
             @include mediaTablet {
                 @include fontSize(14);
             }

@@ -1,11 +1,13 @@
 .title {
     @include fontStyle($fontRaleway,$fontNormal,36);
     @include textUpCenter(uppercase,center);
-    @include mediaTablet {
-        @include fontSize(24);
-    }
+    
 
     &--white {
         color: $colorWhite;
+    }
+
+    @include mediaTablet {
+        @include fontSize(24);
     }
 }

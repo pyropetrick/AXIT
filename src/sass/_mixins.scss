@@ -1,14 +1,24 @@
-:root {
-	--large-container: 1200px;
+// :root {
+// 	--large-container: 1200px;
+// }
+@mixin flexDir($direction) {
+	display: flex;
+	flex-direction: $direction;
 }
 
-@mixin flexX {
+@mixin flexX($justCont) {
 	display: flex;
-	justify-content: center;
+	justify-content: $justCont;
 }
-@mixin flexY {
+@mixin flexY($align) {
 	display: flex;
-	align-items: center;
+	align-items: $align;
+}
+
+@mixin flexXY($justCont, $align) {
+	display: flex;
+	justify-content: $justCont;
+	align-items: $align
 }
 
 @mixin flexCenter {
@@ -39,6 +49,10 @@
 
 @mixin fontSize($count) {
     font-size: calc($count / 16) + rem;
+}
+
+@mixin fontLh($count) {
+    line-height: calc($count / 16) + rem;
 }
 
 

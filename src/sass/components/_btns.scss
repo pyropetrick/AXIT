@@ -1,15 +1,16 @@
 .button {
     @include fontStyle($fontOpenSans,$fontSemiBold,18);
     color: $colorWhite;
-    @extend %transitionAll;
+    @include transitionAll;
     &:hover {
-        @extend %cursorPointer;
+        @include cursorPointer;
     }
     &--banner {
         border: $borderBtn;
         background: rgba(0, 0, 0, 0);
         padding: 15px 0px;
         width: 270px;
+        
         @include mediaTablet {}
         &:hover {
             color: $colorRed;
@@ -19,9 +20,6 @@
             background-color: $colorDarkRed;
             color: $colorWhite;
             border-color: $colorDarkRed;
-        }
-        @media screen and (max-width: 601px) {
-            width: 100%;
         }
         
     }

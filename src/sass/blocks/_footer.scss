@@ -1,17 +1,19 @@
 .footer {
     background-color: $colorBlack;
-    @extend %flexCenter;
+    @include flexCenter;
     padding: 45px 0;
 
     &__list {
-        @extend %flexCenter;
+        @include flexCenter;
         margin-bottom: 30px;
         
         &-item {
             margin-right: 25px;
+            
             &:last-child {
             margin: 0;
             }
+            
             @include mediaMobile {
                 margin-right: 15px;
             }
@@ -22,8 +24,9 @@
         }
     }
     &__copy {
-        @include textUpCenter(null,center);
+        text-align: center;
         color: rgba(255, 255, 255, 0.5);
+        
         @include mediaTablet {
             @include fontSize(14);
         }

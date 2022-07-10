@@ -9,10 +9,11 @@
         
         &-btn {
             @include fontStyle($fontOpenSans,$fontNormal, 14);
-            @include textUpCenter(uppercase,null);
+            text-transform: uppercase;
             padding: 10px 70px;
             border: 0;
             background-color: $colorWhite;
+            
             @include mediaMobile {
                 padding: 10px 15px;
                 @include fontSize(14);
@@ -21,7 +22,7 @@
 
             &:hover {
                 background-color: #ddd;
-                @extend %cursorPointer;
+                @include cursorPointer;
             }
             &--active {
                 border: $borderTab;
@@ -35,7 +36,7 @@
         border: $borderTab;
         display: none;
         &--active {
-            @include flex(space-between,null,null)
+            @include flexX(space-between)
         }
     }
     &__inner-box {
@@ -45,8 +46,7 @@
         }
         @include mediaMobile {
             padding: 30px 25px;
-            display: flex;
-            flex-direction: column;
+            @include flexDir(column);
             align-items:center;
         }
     }
@@ -64,9 +64,11 @@
     }
     &__text {
         margin-bottom: 30px;
+        
         @include mediaTablet {
             @include fontSize(14);
         }
+        
         @include mediaMobile {
             @include fontSize(13);
             text-align: center;
@@ -74,9 +76,11 @@
     }
     &__image {
         max-width: 470px;
+        
         @include mediaTablet {
             max-width: 400px;   
         }
+        
         @include mediaMobile {
             display: none;
         }

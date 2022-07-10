@@ -2,6 +2,7 @@
     padding: 100px 0 50px;  
     background: linear-gradient($colorGradient), url('../img/background/bannerSec.jpg');
     background-size: cover;
+    
     @include mediaMobile {
         padding: 50px 0;
     }
@@ -9,7 +10,7 @@
     &__subtitle {
         color: $colorWhite;
         margin-bottom: 75px;
-        @include textUpCenter(null,center);
+        text-align: center;
         
         @include mediaTablet {
             @include fontSize(14);

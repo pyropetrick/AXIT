@@ -10,18 +10,22 @@
     &__subtitle {
         color: $colorDarkGrey;
         margin-bottom: 90px;
-        @include textUpCenter(null,center);
+        text-align: center;
+        
         @include mediaTablet {
             @include fontSize(14);
             margin-bottom: 70px;
         }
+        
         @include mediaMobile {
             margin-bottom: 65px;
         }
     }
 
     &__form {
-        @include flex(null,center,column);
+        display: flex;
+        flex-direction: column;
+        align-items:center;
         gap: 50px;
 
         &--wrapper {
@@ -35,7 +39,7 @@
             }
         }
         &-input {
-            @include flex(null,null,column);
+            @include flexDir(column);
             gap: 50px;
             width: 550px;
             @include mediaTablet {
@@ -47,7 +51,7 @@
         }
     &__comment {
         &--wrapper {
-            @include flex(null,null,column);
+            @include flexDir(column);
         }
     }
 }

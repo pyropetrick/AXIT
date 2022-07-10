@@ -41,31 +41,39 @@
 .social-media__list-link {
   @include fontSize(50);
   color: $colorBrand;
-  @extend %transitionAll;
+  @include transitionAll;
+  
+  &:hover {
+    @include cursorPointer;
+  }
+  
   @include mediaTablet {
     @include fontSize(45);
   }
+  
   @include mediaMobile {
     @include fontSize(28);
   }
-  &:hover {
-    @extend %cursorPointer;
-  }
+  
 }
 
 .footer__list-link {
   @include fontSize(50);
   color: $colorBrand;
-  @extend %transitionAll;
+  @include transitionAll;
+  
+  &:hover {
+    @include cursorPointer;
+    color: $colorWhite;
+  }
+  
   @include mediaTablet {
     @include fontSize(45);
   }
+  
   @include mediaMobile {
     @include fontSize(26);
   }
-  &:hover {
-    @extend %cursorPointer;
-    color: $colorWhite;
-  }
+  
 }
 

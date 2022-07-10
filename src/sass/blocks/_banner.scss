@@ -2,20 +2,20 @@
     height: 100vh;
     background: linear-gradient($colorGradient), url('../img/background/backImg.jpg') center;
     background-size: cover;
+    
     @include mediaTablet {
-        height: 100%;
-    }
-    @include mediaMobile {
         height: 100%;
     }
 
     .content-box {
         height: 100%;
-        @include flex(null,center,null);
+        @include flexY(center);
         gap: 30px;
+        
         @include mediaTablet {
             padding: 150px 15px 75px;
         }
+
         @include mediaMobile {
             flex-direction: column;
             justify-content: space-between;
@@ -24,9 +24,9 @@
     }
     
     &__box-title {
-        display:flex;
-        flex-direction: column;
+        @include flexDir(column);
         color: $colorWhite;
+
         @include mediaMobile {  
             align-items: center;
         }
@@ -35,16 +35,19 @@
     &__logo {
         max-width: 105px;
         max-height: 55px;
+        
         @include mediaTablet {
             max-width: 65px;
             max-height: 40px;
         }
+        
         @include mediaMobile {
             display: none;
             }
         &--wrapper {
             margin-bottom: 70px;
             display: flex;
+            
             @include mediaMobile {
                 margin: 0;
             }
@@ -59,13 +62,12 @@
 
         }
         @include mediaMobile {
-            // @include fontSize(36);
             text-align: center;
         }
     }
 
     &__subtitle {
-        @include fontStyle(null,$fontNormal,18);
+        @include fontStyle($fontRaleway,$fontNormal,18);
         padding-right: 300px;
         margin-bottom: 30px;
         @include mediaTablet {
@@ -90,8 +92,9 @@
         &-title {
             margin-bottom: 75px;
             @include fontStyle($fontOpenSans,$fontBold,24);
-            @include textUpCenter(uppercase,null);
+            text-transform: uppercase;
             padding: 30px 15px 0 15px;
+            
             @include mediaTablet {
                 @include fontSize(24);
             }
@@ -106,16 +109,18 @@
         }
         &-wrapper {
             padding: 0 50px;
+            
             @include mediaMobile {
                 padding: 0 20px;
             }
         }
         &-input {
-            @include flex(null,null,column);
+            @include flexDir(column);
             margin-bottom: 35px;
             
             &:last-child {
                 margin-bottom: 75px;
+                
                 @include mediaMobile {
                     margin-bottom: 50px;
                 }

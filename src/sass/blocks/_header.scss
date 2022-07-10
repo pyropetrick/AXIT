@@ -5,7 +5,8 @@
 
 
     .content-box {
-        @include flex(space-between,center, row);
+        @include flexXY(space-between,center);
+        
         @include mediaMobile {
             padding: 20px;
         }
@@ -14,6 +15,7 @@
     &__logo {
         max-width: 55px;
         max-height: 35px;
+        
         @include mediaMobile { 
             max-width: 40px;
             max-height: 25px;
@@ -27,9 +29,11 @@
 }
 
 .menu {
-    @extend %flexCenter;
+    @include flexCenter;
+    
     @include mediaMobile {
         display: none;
+        
         &.active {
             display: flex;
         }
@@ -49,8 +53,8 @@
     }
     
     &__list {
-        @extend %flexCenter;
-        @extend %transitionAll;
+        @include flexCenter;
+        @include transitionAll;
         
         @include mediaMobile {
             display: block;
@@ -64,6 +68,7 @@
             background-color: black;
             z-index: 1;
             overflow: auto;
+            
             &.active {
                 top: 0;
             }
@@ -71,11 +76,11 @@
         &-item {
             @include fontStyle($fontOpenSans,$fontSemiBold, 14);
             padding: 30px;
-            @extend %transitionAll;
+            @include transitionAll;
             
             &:hover {
                 background-color: $colorRed;
-                @extend %cursorPointer;
+                @include cursorPointer;
             }
             &:active {
                 background-color: $colorDarkRed;
@@ -83,7 +88,7 @@
         }
 
         &-link {
-            @include textUpCenter(uppercase,null);
+            text-transform: uppercase;
             
             &:link {
                 color: $colorWhite;

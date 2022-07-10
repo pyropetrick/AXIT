@@ -1,51 +1,41 @@
-// подключение шрифтов
 @import './fonts';
 
-// переменные
 @import './vars';
 
-// подключение миксов
 @import './mixins';
 
-// обнуление + стандартные стили
+// reset and standart styles
 @import './adjustments';
 
 
-// компоненты
+// components
 @import './components/btns';
+// separator
 @import './components/sep';
 @import './components/input';
+// repeat titles
 @import './components/title';
+// svg icons 
 @import './components/icons';
 
 // Blocks
 
-// header
 @import './blocks/header';
 
-// banner
 @import './blocks/banner';
 
-// social-media
 @import './blocks/social';
 
-// tabs
 @import './blocks/tabs';
 
-// about
 @import './blocks/about';
 
-// price
 @import './blocks/price';
 
-// reviews
 @import './blocks/reviews';
 
-// banner-second
 @import './blocks/bannerSecond';
 
-// contact
 @import './blocks/contact';
 
-// footer
 @import './blocks/footer';

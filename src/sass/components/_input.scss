@@ -1,5 +1,5 @@
 .input {
-    border: 0;
+    border: none;
     border-bottom: $borderInp;
     padding: 10px;
     padding-left: 0;
@@ -7,48 +7,50 @@
     color: $colorGrey;
     
     &::-webkit-input-placeholder {
-        @include fontStyle($fontOpenSans,null,14);
+        @include fontStyle($fontOpenSans,$fontNormal,14);
         color: $colorGrey;
     }
     &::-moz-placeholder {
-        @include fontStyle($fontOpenSans,null,14);
+        @include fontStyle($fontOpenSans,$fontNormal,14);
         color: $colorGrey;
     }
 
     &:focus {
         background-color: $colorWhite;
         border-color: $colorGrey;
-        outline: 0;
+        outline: none;
     }
 }
 
 .text-area {
-    overflow: auto;
     resize: none;
-    border: 0;
+    border: none;
     border-bottom: $borderInp;
     width: 550px;
     height: 100%;
     @include fontStyle($fontOpenSans,$fontNormal,14);
     color: $colorGrey;
-    @include mediaTablet {
-        width: 480px;
-    }
-    @include mediaMobile {
-        width: 280px;
-        height: 180px;
-    }
+
     &:focus {
         background-color: $colorWhite;
         border-color: $colorGrey;
-        outline: 0;
+        outline: none;
     }
     &::-webkit-input-placeholder {
-        @include fontStyle($fontOpenSans,null,14);
+        @include fontStyle($fontOpenSans,$fontNormal,14);
         color: $colorGrey;
     }
     &::-moz-placeholder {
-        @include fontStyle($fontOpenSans,null,14);
+        @include fontStyle($fontOpenSans,$fontNormal,14);
         color: $colorGrey;
+    }
+
+    @include mediaTablet {
+        width: 480px;
+    }
+
+    @include mediaMobile {
+        width: 280px;
+        height: 180px;
     }
 }

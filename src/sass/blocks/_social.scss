@@ -1,16 +1,18 @@
 .social-media {
     background-color: $colorDarkWhite;
     .content-box {
-        @include flex(space-between,null,null);
+        @include flexY(space-between);
         padding: 15px 15px;
-				@include mediaMobile {
+				
+        @include mediaMobile {
 					@include flex(center, center, column);
 					padding: 30px 15px;				
 				}
     }
     &__box-title {
         padding-top: 10px;
-				@include mediaMobile {
+				
+        @include mediaMobile {
 					text-align: center;
 				}
     }
@@ -18,26 +20,28 @@
         @include fontStyle($fontOpenSans,$fontBold,24);
         color: $colorBlackText;
         margin-bottom: 25px;
-				@include mediaMobile {
+				
+        @include mediaMobile {
 					@include fontSize(18);
 				}
 				
     }
     &__subtitle {
-        @include fontStyle(null,$fontNormal,18);
+        @include fontStyle($fontRaleway,$fontNormal,18);
         color: $colorDarkGrey;
-				@include mediaMobile {
+				
+        @include mediaMobile {
 					@include fontSize(14);
 					margin-bottom: 30px;
 				}
     }
 
     &__list {
-        @extend %flexCenter;
+        @include flexCenter;
 
         &-item {
             margin-right: 30px;
-            @extend %flexCenter;
+            @include flexCenter;
 						@include mediaMobile {
 							margin-right: 20px;
 						}
