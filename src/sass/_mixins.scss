@@ -2,17 +2,26 @@
 	--large-container: 1200px;
 }
 
-%flexCenter {
+@mixin flexX {
+	display: flex;
+	justify-content: center;
+}
+@mixin flexY {
+	display: flex;
+	align-items: center;
+}
+
+@mixin flexCenter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-%transitionAll {
+@mixin transitionAll {
     transition: all .3s  ease-in-out;
 }
 
-%cursorPointer {
+@mixin cursorPointer {
     cursor: pointer;
 }
 
