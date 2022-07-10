@@ -17,16 +17,11 @@ function onTabClick(item) {
             })
             currentBtn.classList.add('tabs__nav-btn--active');
             currentTab.classList.add('tabs__box-wrap--active');
-
         }
-        
         
     })
 }
 tabsBtn.forEach(onTabClick);
-
-
-document.querySelector(".tabs__nav-btn").click();
 
 // reviews
 
@@ -54,10 +49,6 @@ function onDotClick(item) {
 
 dotBtn.forEach(onDotClick);
 
-document.querySelector(".dots-nav__btn").click();
-
-
-
 // menu-burger
 
 const burgerBtn = document.querySelectorAll(".burger-btn");
@@ -81,3 +72,7 @@ function onBurgerClick (item) {
 
 burgerBtn.forEach(onBurgerClick);
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector(".dots-nav__btn").click();
+    document.querySelector(".tabs__nav-btn").click();
+})
