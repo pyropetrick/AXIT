@@ -2,16 +2,32 @@
     @include fontStyle($fontOpenSans,$fontSemiBold,18);
     color: $colorWhite;
     @include transitionAll;
+    width: 400px;
+    padding: 15px 0px;
+    border: none;
+    
     &:hover {
         @include cursorPointer;
     }
-    &--banner {
+
+    @include mediaMobile {
+        width: 100%;
+    }
+
+    &--red {
+        background: $colorRed;
+        &:hover {
+            background-color: $colorDarkRed;    
+        }
+        &:active {
+            background-color: $colorRed;
+            box-shadow: inset 0px 0px 10px $colorDarkRed;
+        }
+    }
+
+    &--white {
         border: $borderBtn;
-        background: rgba(0, 0, 0, 0);
-        padding: 15px 0px;
-        width: 270px;
-        
-        @include mediaTablet {}
+        background: transparent;
         &:hover {
             color: $colorRed;
             border-color: $colorRed;
@@ -21,79 +37,16 @@
             color: $colorWhite;
             border-color: $colorDarkRed;
         }
-        
     }
     &--sign {
         @include fontSize(15);
-        background: $colorRed;
         border-radius: 0px 0px 10px 10px;
-        width: 470px;
-        padding: 20px 0;
         border: 0;
         
-        @include mediaTablet {
-            width: 400px;
-        }
-        @include mediaMobile {
-            width: 300px;
-        }
-        @media screen and (max-width: 601px) {
-            width: 100%;
-        }
-        &:hover {
-            background-color: $colorDarkRed;
-        }
-        &:active {
-            background-color: $colorRed;
-        }
     }
-    &--tab {
-        background: $colorRed;
-        width: 270px;
-        padding: 15px 0;
-        border: 0;
-        @include mediaTablet {
-            width: 240px;
-        }
-        @include mediaMobile {
-            width: 200px;
-        }
-        @media screen and (max-width: 601px) {
-            width: 100%;
-        }
-
-        &:hover {
-            background-color: $colorDarkRed;
-        }
-        &:active {
-            background-color: $colorRed;
-            box-shadow: inset 0px 0px 10px $colorDarkRed;
-        }
-    }
-    &--width {
-        width: 370px;
-        @include mediaTablet {
-            width: 300px;
-        }
-        @include mediaMobile {
-            width: 280px;
-        }
-        @media screen and (max-width: 601px) {
-            width: 100%;
-        }
-    }
-    &--wrapper {
-        @include flex(center,null,null);
-    }
-    &--contact {
-        padding: 15px 0;
-        background: $colorRed;
-        border: 0;
-        &:hover {
-            background-color: $colorDarkRed;
-        }
-        &:active {
-            background-color: $colorRed;
-        }
+    
+    &--center {
+        display: block;
+        margin: 0 auto;
     }
 }

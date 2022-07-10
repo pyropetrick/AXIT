@@ -3,6 +3,15 @@
     margin: 55px auto 40px;
     height: 1px;
     
+    @include mediaTablet {
+        width: 140px;
+        margin: 40px auto 30px;
+    }
+    
+    @include mediaMobile {
+        width: 135px;
+        margin: 40px auto;
+    }
 
     &--white {
         background-color: $colorWhite;
@@ -17,13 +26,5 @@
         margin-right: 0;
     }
 
-    @include mediaTablet {
-        width: 140px;
-        margin: 40px auto 30px;
-    }
     
-    @include mediaMobile {
-        width: 135px;
-        margin: 40px auto;
-    }
 }
