@@ -116,12 +116,13 @@
     }
     
     &__form {
+        width: 100%;
 
         &-title {
             margin-bottom: 75px;
             @include fontStyle($fontOpenSans,$fontBold,24);
             text-transform: uppercase;
-            padding: 30px 15px 0 15px;
+            text-align: center;
             
             @include mediaTablet {
                 @include fontSize(24);
@@ -136,10 +137,10 @@
             }
         }
         &-wrapper {
-            padding: 0 50px;
+            padding: 40px 25px 0 25px;
             
             @include mediaMobile {
-                padding: 0 20px;
+                padding: 20px 15px 0 15px;
             }
         }
         &-input {

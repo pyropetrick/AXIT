@@ -10,7 +10,8 @@
             position: absolute;
             top: 0;
             background-color: black;
-            overflow: auto;
+            overflow-x: hidden;
+            z-index: 999;
         }
     }
     &__list {

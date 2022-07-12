@@ -1,8 +1,7 @@
 .input {
     border: none;
     border-bottom: $borderInp;
-    padding: 10px;
-    padding-left: 0;
+    padding: 10px 0;
     width: 100%;
     margin-bottom: 50px;
     @include fontStyle($fontOpenSans,$fontNormal,14);
